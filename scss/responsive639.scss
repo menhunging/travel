@@ -1,0 +1,37 @@
+@media (max-width: 639px) {
+  .header {
+    .phone-block {
+      display: none;
+    }
+
+    .btn {
+      svg {
+        display: none;
+      }
+    }
+  }
+
+  .btn {
+    font-size: 10px;
+    line-height: 20px;
+    padding: 10px 20px;
+  }
+
+  .menu-invis {
+    .phone-block {
+      padding: 0 20px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-top: 20px;
+
+      .phone {
+        padding: 0;
+      }
+    }
+  }
+
+  .btn-menu {
+    top: 52px;
+  }
+}

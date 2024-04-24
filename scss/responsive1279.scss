@@ -1,0 +1,66 @@
+@media (max-width: 1279px) {
+  .logo {
+    width: 150px;
+    height: 33px;
+  }
+
+  .header {
+    padding: 15px 50px;
+
+    .header-adress {
+      display: none;
+    }
+  }
+
+  .phone-block {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .header-info {
+    gap: 20px;
+  }
+
+  .btn {
+    padding: 13px 20px;
+    gap: 10px;
+  }
+
+  .link-mail {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .menu-invis {
+    padding: 100px 0;
+
+    a {
+      padding: 20px 40px;
+    }
+
+    .header-adress {
+      display: flex;
+      padding: 0 40px;
+      max-width: 100%;
+      width: 100%;
+      margin-top: 25px;
+    }
+  }
+
+  .footer__links {
+    line-height: 24px;
+
+    .link {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  .footer__top {
+    padding: 20px 60px 50px;
+  }
+
+  .footer__center {
+    padding: 50px 100px;
+  }
+}

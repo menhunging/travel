@@ -1,0 +1,23 @@
+@media (max-width: 1899px) {
+  .header {
+    &.opened {
+      .header__inner {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1799px) {
+  .footer__top {
+    padding: 20px 60px;
+  }
+
+  .footer__center {
+    padding: 50px 100px 100px;
+  }
+
+  .footer__links {
+    transform: translate(calc(-50% - 24px), calc(-50% + 56px));
+  }
+}
