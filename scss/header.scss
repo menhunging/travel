@@ -1,11 +1,18 @@
 .header {
   background-color: #f7f9f9;
   padding: 20px 80px;
+  position: relative;
+  z-index: 5;
 
   &.opened {
     .header__inner {
       padding-left: 450px;
     }
+  }
+
+  .btn {
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
@@ -49,6 +56,18 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  position: relative;
+  padding-right: 25px;
+
+  &:hover {
+    .phone-block__invis {
+      display: block;
+    }
+
+    .phone-block__arrow {
+      transform: translateY(-50%) rotate(-180deg);
+    }
+  }
 
   .phone {
   }
@@ -111,15 +130,19 @@
   z-index: 10;
   color: $colorBlue;
 
-  a {
-    padding: 20px 70px;
-    display: block;
-    transition: all 0.3s;
-    white-space: nowrap;
+  ul {
+    li {
+      a {
+        padding: 20px 70px;
+        display: block;
+        transition: all 0.3s;
+        white-space: nowrap;
 
-    &:hover {
-      color: $colorWhite;
-      background-color: $colorBlueLight;
+        &:hover {
+          color: $colorWhite;
+          background-color: $colorBlueLight;
+        }
+      }
     }
   }
 
@@ -143,4 +166,44 @@
   .header-adress {
     display: none;
   }
+}
+
+.phone-block__invis {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: $colorWhite;
+  padding-top: 10px;
+  font-size: 16px;
+  line-height: 18px;
+  color: $colorBlack;
+  width: 100%;
+  text-align: center;
+  display: none;
+
+  ul {
+    background-color: #f7f9f9;
+    padding: 20px 10px;
+  }
+
+  li {
+    text-align: center;
+
+    & + li {
+      margin-top: 10px;
+    }
+
+    a {
+      text-align: center;
+      @include text-decoration-hover($colorBlack);
+    }
+  }
+}
+
+.phone-block__arrow {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s;
 }

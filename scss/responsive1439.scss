@@ -11,4 +11,67 @@
   .header__inner {
     gap: 30px;
   }
+
+  .index-page .header .logo::before {
+    top: -46px;
+  }
+
+  .swiper-button-prev {
+    left: -20px;
+  }
+
+  .swiper-button-next {
+    right: -20px;
+  }
+
+  .btn-arrow-circle {
+    width: 70px;
+    height: 70px;
+    background-size: 25px;
+  }
+
+  .slider-default__content {
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .slider-default__link {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  section {
+    padding: 50px 0;
+  }
+
+  .slider-section__body {
+    margin-top: 30px;
+  }
+
+  .slider-section__head {
+    gap: 20px;
+  }
+
+  .breadcrumbs {
+    padding: 25px 60px;
+  }
+
+  .text-page {
+    padding: 50px 0 0;
+  }
+
+  .text-page__row {
+    gap: 50px 60px;
+  }
+
+  .text-block__line {
+    gap: 50px;
+  }
+
+  .text-block {
+    padding: 50px 0;
+  }
 }

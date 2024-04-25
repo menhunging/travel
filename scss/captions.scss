@@ -15,16 +15,82 @@ h1,
   font-size: 66px;
   line-height: 76px;
   font-weight: 500;
+
+  @media (max-width: 1280px) {
+    font-size: 55px;
+    line-height: 66px;
+  }
+
+  @media (max-width: 1023px) {
+    font-size: 45px;
+    line-height: 56px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 36px;
+    line-height: 38px;
+  }
 }
 
 h2,
 .caption--h2 {
   font-size: 54px;
   line-height: 70px;
+
+  @media (max-width: 1280px) {
+    font-size: 44px;
+    line-height: 60px;
+  }
+
+  @media (max-width: 1023px) {
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 28px;
+    line-height: 30px;
+  }
 }
 
 h3,
 .caption--h3 {
   font-size: 38px;
   line-height: 48px;
+
+  @media (max-width: 1280px) {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  @media (max-width: 1023px) {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+h4,
+.caption--h4 {
+  font-size: 28px;
+  line-height: 36px;
+
+  @media (max-width: 1280px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media (max-width: 1023px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }

@@ -47,10 +47,6 @@ input {
   transition: opacity 0.3s;
   opacity: 1;
 
-  &:hover {
-    opacity: 0.75;
-  }
-
   picture {
     width: 100%;
     height: 100%;
@@ -69,7 +65,6 @@ input {
 
 .main {
   width: 100%;
-  padding-top: 70px;
 }
 
 .input-item {
@@ -529,38 +524,31 @@ div {
   }
 }
 
-.swiper-button-prev {
-  left: 24px;
-}
-.swiper-button-next {
-  right: 24px;
-}
-
 .swiper-button-prev,
 .swiper-button-next {
   opacity: 1 !important;
-  width: 56px;
-  height: 56px;
-  background-color: $colorWhite;
-  border: solid 1px $colorBlack;
-  @include border-radius(50%);
-  margin-top: -29px;
-  @include transition(all 0.3s);
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  transform: translateY(-50%);
 
   &:after {
-    color: #424242;
-    font-size: 16px;
-    font-weight: 700;
+    display: none;
   }
+}
 
-  &:hover {
-    background-color: $colorBlack;
-    color: $colorWhite;
+.swiper-button-next {
+  right: -65px;
+}
 
-    &::after {
-      color: $colorWhite;
-    }
-  }
+.swiper-button-prev {
+  left: -65px;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0 !important;
+  pointer-events: none;
 }
 
 picture {

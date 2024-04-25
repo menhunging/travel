@@ -175,47 +175,46 @@ $(document).ready(function () {
 
     function sliderinit() {
       sliders.forEach((slider, index) => {
-        let count = 1;
-        let initial = 0;
-        let navNext = undefined;
-        let navPrev = undefined;
-
         if (!slider.swiper) {
-          if ($(slider).hasClass("slider-default--spaces")) {
-            count = 2;
-            initial = $(slider).find(".slider-default__slide").length;
+          // if ($(slider).hasClass("slider-default--spaces")) {
+          //   count = 2;
+          //   initial = $(slider).find(".slider-default__slide").length;
 
-            navNext = $(slider)
-              .parents(".slider-default-wrapper")
-              .find(".arrows-controls__right")[0];
-            navPrev = $(slider)
-              .parents(".slider-default-wrapper")
-              .find(".arrows-controls__left")[0];
-          }
+          //   navNext = $(slider)
+          //     .parents(".slider-default-wrapper")
+          //     .find(".arrows-controls__right")[0];
+          //   navPrev = $(slider)
+          //     .parents(".slider-default-wrapper")
+          //     .find(".arrows-controls__left")[0];
+          // }
 
           mySwipers[index] = new Swiper(slider, {
-            slidesPerView: count,
+            slidesPerView: 3,
             spaceBetween: 24,
-            initialSlide: initial,
             navigation: {
-              nextEl: navNext && navNext,
-              prevEl: navPrev && navPrev,
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
             },
             breakpoints: {
               0: {
                 slidesPerView: 1,
-                initialSlide: 1,
-                centeredSlides: true,
+                spaceBetween: 16,
+              },
+              480: {
+                slidesPerView: 2,
                 spaceBetween: 16,
               },
               768: {
-                slidesPerView: count,
+                slidesPerView: 2,
                 spaceBetween: 16,
-                centeredSlides: false,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 16,
               },
               1280: {
+                slidesPerView: 3,
                 spaceBetween: 24,
-                centeredSlides: false,
               },
             },
           });

@@ -14,7 +14,13 @@
   .btn {
     font-size: 10px;
     line-height: 20px;
-    padding: 10px 20px;
+    padding: 10px 32px;
+  }
+
+  .footer .btn,
+  .header .btn {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .menu-invis {
@@ -33,5 +39,48 @@
 
   .btn-menu {
     top: 52px;
+  }
+
+  .slider-section__head {
+    gap: 10px 20px;
+  }
+
+  .slider-default__content {
+    margin-top: 10px;
+  }
+
+  .slider-default__item .date {
+    width: 70px;
+    height: 70px;
+  }
+
+  .slider-default__item .date .day {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .slider-default__item .date .mon {
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+  }
+
+  .slider-default__link {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .slider-default__price {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .slider-default .picture {
+  }
+
+  .btn-arrow-circle {
+    width: 50px;
+    height: 50px;
+    background-size: 15px;
   }
 }

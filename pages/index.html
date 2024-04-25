@@ -6,25 +6,25 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, viewport-fit=cover" />
     <title>Главная</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../../img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="../../img/favicon/safari-pinned-tab.svg" color="#030e2c">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#030e2c">
     <meta name="msapplication-TileColor" content="#030e2c">
     <meta name="theme-color" content="#030e2c">
 
-    <link rel="stylesheet" type="text/css" href="../../fonts/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="../fonts/stylesheet.css" />
 
-    <link rel="stylesheet" type="text/css" href="../../libs/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../libs/selectric/selectric.css" />
-    <link rel="stylesheet" type="text/css" href="../../libs/micromodal/micromodal.css" />
-    <link rel="stylesheet" type="text/css" href="../../libs/fancybox/fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="../libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../libs/selectric/selectric.css" />
+    <link rel="stylesheet" type="text/css" href="../libs/micromodal/micromodal.css" />
+    <link rel="stylesheet" type="text/css" href="../libs/fancybox/fancybox.css" />
 
-    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
 </head>
 
-<body>
+<body class="index-page">
     <div class="site-wrapper">
         <header class="header">
             <div class="header__inner">
@@ -52,7 +52,23 @@
                 <div class="header-info">
                     <a href="#" class="link-mail">support@clubtravel.ru</a>
                     <div class="phone-block">
-                        <a href="#" class="phone">+7 988 250 04 08</a>
+                        <a href="tel:+79882500408" class="phone">+7 988 250 04 08</a>
+
+                        <span class="phone-block__arrow">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 6.11394L12.4447 0.916585L14 2.40124L7 9.08325L-5.8416e-07 2.40124L1.55531 0.916586L7 6.11394Z"
+                                    fill="#5184C4" />
+                            </svg>
+                        </span>
+
+                        <div class="phone-block__invis">
+                            <ul>
+                                <li><a href="tel:+79882500408">+7 988 250 04 08</a></li>
+                                <li><a href="tel:+79882500408">+7 988 250 04 08</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <a href="#" class="btn">
                         оставить заявку
@@ -107,7 +123,338 @@
                 </div>
             </div>
         </header>
-        <main class="main">main</main>
+        <main class="main">
+            <section class="grettings">
+                <picture class="picture">
+                    <source type="image/webp" srcset="../img/pic-grettings.jpg" />
+                    <img src="../img/pic-grettings.jpg" alt="" />
+                </picture>
+            </section>
+            <section class="slider-section">
+                <div class="container">
+                    <div class="slider-section__head">
+                        <h2 class="caption caption--h2">Спецпредложения</h2>
+                        <a href="#" class="link link--arrow">Все предложения</a>
+                    </div>
+                    <div class="slider-section__body">
+                        <div class="slider-default swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slider-default__item">
+                                        <picture class="picture">
+                                            <source type="image/webp" srcset="../img/pic-default1.webp" />
+                                            <img src="../img/pic-default1.jpg" alt="" />
+                                        </picture>
+                                        <div class="slider-default__content">
+                                            <a href="#" class="slider-default__link">Арабские Эмираты</a>
+                                            <span class="slider-default__price">от 120 000 р</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-default__item">
+                                        <a href="#"></a>
+                                        <picture class="picture">
+                                            <source type="image/webp" srcset="../img/pic-default1.webp" />
+                                            <img src="../img/pic-default1.jpg" alt="" />
+                                        </picture>
+                                        <div class="slider-default__content">
+                                            <a href="#" class="slider-default__link">Отдых на мальдивах</a>
+                                            <span class="slider-default__price">от 120 000 р</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-default__item">
+                                        <a href="#"></a>
+                                        <picture class="picture">
+                                            <source type="image/webp" srcset="../img/pic-default1.webp" />
+                                            <img src="../img/pic-default1.jpg" alt="" />
+                                        </picture>
+                                        <div class="slider-default__content">
+                                            <a href="#" class="slider-default__link">Приключения в России</a>
+                                            <span class="slider-default__price">от 120 000 р</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-default__item">
+                                        <a href="#"></a>
+                                        <picture class="picture">
+                                            <source type="image/webp" srcset="../img/pic-default1.webp" />
+                                            <img src="../img/pic-default1.jpg" alt="" />
+                                        </picture>
+                                        <div class="slider-default__content">
+                                            <a href="#" class="slider-default__link">Греческие каникулы</a>
+                                            <span class="slider-default__price">от 120 000 р</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-default__item">
+                                        <picture class="picture">
+                                            <source type="image/webp" srcset="../img/pic-default1.webp" />
+                                            <img src="../img/pic-default1.jpg" alt="" />
+                                        </picture>
+                                        <div class="slider-default__content">
+                                            <a href="#" class="slider-default__link">Арабские Эмираты</a>
+                                            <span class="slider-default__price">от 120 000 р</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-default__item">
+                                        <a href="#"></a>
+                                        <picture class="picture">
+                                            <source type="image/webp" srcset="../img/pic-default1.webp" />
+                                            <img src="../img/pic-default1.jpg" alt="" />
+                                        </picture>
+                                        <div class="slider-default__content">
+                                            <a href="#" class="slider-default__link">Отдых на мальдивах</a>
+                                            <span class="slider-default__price">от 120 000 р</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-default__item">
+                                        <a href="#"></a>
+                                        <picture class="picture">
+                                            <source type="image/webp" srcset="../img/pic-default1.webp" />
+                                            <img src="../img/pic-default1.jpg" alt="" />
+                                        </picture>
+                                        <div class="slider-default__content">
+                                            <a href="#" class="slider-default__link">Приключения в России</a>
+                                            <span class="slider-default__price">от 120 000 р</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-default__item">
+                                        <a href="#"></a>
+                                        <picture class="picture">
+                                            <source type="image/webp" srcset="../img/pic-default1.webp" />
+                                            <img src="../img/pic-default1.jpg" alt="" />
+                                        </picture>
+                                        <div class="slider-default__content">
+                                            <a href="#" class="slider-default__link">Греческие каникулы</a>
+                                            <span class="slider-default__price">от 120 000 р</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <button class="swiper-button-prev btn-arrow-circle btn-arrow-circle--left"></button>
+                            <button class="swiper-button-next btn-arrow-circle btn-arrow-circle--right"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="slider-section">
+                <div class="container">
+                    <div class="slider-section__head">
+                        <h2 class="caption caption--h2">Новости</h2>
+                        <a href="#" class="link link--arrow">Все новости</a>
+                    </div>
+                    <div class="slider-section__body">
+                        <div class="slider-default swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slider-default__item">
+                                        <a href="#"></a>
+                                        <picture class="picture">
+                                            <div class="date">
+                                                <span class="day">22 <span class="mon">01.24</span></span>
+                                            </div>
+                                            <source type="image/webp" srcset="../img/pic-default1.webp" />
+                                            <img src="../img/pic-default1.jpg" alt="" />
+                                        </picture>
+                                        <div class="slider-default__content">
+                                            <a href="#" class="slider-default__link">Куда можно долететь прямым
+                                                рейсом?</a>
+                                            <p>
+                                                Сегодня открыты большие возможности для путешествий. Прямым рейсом можно
+                                                попасть в 25 стран.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-default__item">
+                                        <a href="#"></a>
+                                        <picture class="picture">
+                                            <div class="date">
+                                                <span class="day">22 <span class="mon">01.24</span></span>
+                                            </div>
+                                            <source type="image/webp" srcset="../img/pic-default1.webp" />
+                                            <img src="../img/pic-default1.jpg" alt="" />
+                                        </picture>
+                                        <div class="slider-default__content">
+                                            <a href="#" class="slider-default__link">Куда можно долететь прямым
+                                                рейсом?</a>
+                                            <p>
+                                                Сегодня открыты большие возможности для путешествий. Прямым рейсом можно
+                                                попасть в 25 стран.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-default__item">
+                                        <a href="#"></a>
+                                        <picture class="picture">
+                                            <div class="date">
+                                                <span class="day">22 <span class="mon">01.24</span></span>
+                                            </div>
+                                            <source type="image/webp" srcset="../img/pic-default1.webp" />
+                                            <img src="../img/pic-default1.jpg" alt="" />
+                                        </picture>
+                                        <div class="slider-default__content">
+                                            <a href="#" class="slider-default__link">Куда можно долететь прямым
+                                                рейсом?</a>
+                                            <p>
+                                                Сегодня открыты большие возможности для путешествий. Прямым рейсом можно
+                                                попасть в 25 стран.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-default__item">
+                                        <a href="#"></a>
+                                        <picture class="picture">
+                                            <div class="date">
+                                                <span class="day">22 <span class="mon">01.24</span></span>
+                                            </div>
+                                            <source type="image/webp" srcset="../img/pic-default1.webp" />
+                                            <img src="../img/pic-default1.jpg" alt="" />
+                                        </picture>
+                                        <div class="slider-default__content">
+                                            <a href="#" class="slider-default__link">Куда можно долететь прямым
+                                                рейсом?</a>
+                                            <p>
+                                                Сегодня открыты большие возможности для путешествий. Прямым рейсом можно
+                                                попасть в 25 стран.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-default__item">
+                                        <picture class="picture">
+                                            <div class="date">
+                                                <span class="day">22 <span class="mon">01.24</span></span>
+                                            </div>
+                                            <source type="image/webp" srcset="../img/pic-default1.webp" />
+                                            <img src="../img/pic-default1.jpg" alt="" />
+                                        </picture>
+                                        <div class="slider-default__content">
+                                            <a href="#" class="slider-default__link">Куда можно долететь прямым
+                                                рейсом?</a>
+                                            <p>
+                                                Сегодня открыты большие возможности для путешествий. Прямым рейсом можно
+                                                попасть в 25 стран.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <button class="swiper-button-prev btn-arrow-circle btn-arrow-circle--left"></button>
+                            <button class="swiper-button-next btn-arrow-circle btn-arrow-circle--right"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="slider-section">
+                <div class="container">
+                    <div class="slider-section__head">
+                        <h2 class="caption caption--h2">Эксклюзивные программы</h2>
+                        <a href="#" class="link link--arrow">Все программы</a>
+                    </div>
+                    <div class="slider-section__body">
+                        <div class="slider-default swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slider-default__item">
+                                        <picture class="picture">
+                                            <source type="image/webp" srcset="../img/pic-default1.webp" />
+                                            <img src="../img/pic-default1.jpg" alt="" />
+                                        </picture>
+                                        <div class="slider-default__content">
+                                            <a href="#" class="slider-default__link">Морское путешествие вдоль Эгейского
+                                                побережья</a>
+                                            <p>
+                                                Ничто не передает турецкий колорит так, как морской круиз на
+                                                классической турецкой деревянной яхте gulet, которая появилась на
+                                                турецком побережье Эгейского моря в начале 1900-х годов.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-default__item">
+                                        <picture class="picture">
+                                            <source type="image/webp" srcset="../img/pic-default1.webp" />
+                                            <img src="../img/pic-default1.jpg" alt="" />
+                                        </picture>
+                                        <div class="slider-default__content">
+                                            <a href="#" class="slider-default__link">Лучшее в Шри-Ланке: по стране - на
+                                                вертолете</a>
+                                            <p>
+                                                Ничто не передает турецкий колорит так, как морской круиз на
+                                                классической турецкой деревянной яхте gulet, которая появилась на
+                                                турецком побережье Эгейского моря в начале 1900-х годов.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-default__item">
+                                        <picture class="picture">
+                                            <source type="image/webp" srcset="../img/pic-default1.webp" />
+                                            <img src="../img/pic-default1.jpg" alt="" />
+                                        </picture>
+                                        <div class="slider-default__content">
+                                            <a href="#" class="slider-default__link">В шаге от вечности - Трек к
+                                                базовому лагерю Эвереста</a>
+                                            <p>
+                                                Ничто не передает турецкий колорит так, как морской круиз на
+                                                классической турецкой деревянной яхте gulet, которая появилась на
+                                                турецком побережье Эгейского моря в начале 1900-х годов.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-default__item">
+                                        <picture class="picture">
+                                            <source type="image/webp" srcset="../img/pic-default1.webp" />
+                                            <img src="../img/pic-default1.jpg" alt="" />
+                                        </picture>
+                                        <div class="slider-default__content">
+                                            <a href="#" class="slider-default__link">Лучшее в Шри-Ланке: по стране - на
+                                                вертолете</a>
+                                            <p>
+                                                Ничто не передает турецкий колорит так, как морской круиз на
+                                                классической турецкой деревянной яхте gulet, которая появилась на
+                                                турецком побережье Эгейского моря в начале 1900-х годов.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <button class="swiper-button-prev btn-arrow-circle btn-arrow-circle--left"></button>
+                            <button class="swiper-button-next btn-arrow-circle btn-arrow-circle--right"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
         <footer class="footer">
             <div class="footer__top">
                 <div class="logo">
@@ -193,13 +540,13 @@
     </div>
 </body>
 
-<script src="../../libs/jquery/jquery-3.7.1.min.js"></script>
-<script src="../../libs/swiper/swiper-bundle.min.js"></script>
-<script src="../../libs/selectric/jquery.selectric.min.js"></script>
-<script src="../../libs/micromodal/micromodal.min.js"></script>
-<script src="../../libs/tabslet/jquery.tabslet.min.js"></script>
-<script src="../../libs/fancybox/fancybox.umd.js"></script>
-<script src="../../libs/inputmask/jquery.inputmask.min.js"></script>
-<script src="../../js/main.js"></script>
+<script src="../libs/jquery/jquery-3.7.1.min.js"></script>
+<script src="../libs/swiper/swiper-bundle.min.js"></script>
+<script src="../libs/selectric/jquery.selectric.min.js"></script>
+<script src="../libs/micromodal/micromodal.min.js"></script>
+<script src="../libs/tabslet/jquery.tabslet.min.js"></script>
+<script src="../libs/fancybox/fancybox.umd.js"></script>
+<script src="../libs/inputmask/jquery.inputmask.min.js"></script>
+<script src="../js/main.js"></script>
 
 </html>

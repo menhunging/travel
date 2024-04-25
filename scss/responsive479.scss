@@ -1,4 +1,10 @@
 @media (max-width: 479px) {
+  .index-page .header .logo::before {
+    top: -8px;
+    left: -20px;
+    width: calc(100% + 30px);
+    height: calc(100% + 17px);
+  }
 }
 
 @media (max-width: 359px) {
@@ -16,7 +22,7 @@
     left: 280px;
   }
 
-  .menu-invis a {
+  .menu-invis ul li a {
     padding: 12px 20px;
     font-size: 12px;
     line-height: 14px;

@@ -14,8 +14,12 @@
     width: 300px;
     left: -300px;
 
-    a {
-      padding: 15px 20px;
+    ul {
+      li {
+        a {
+          padding: 15px 20px;
+        }
+      }
     }
 
     .header-adress {
@@ -110,5 +114,78 @@
   .footer__center__text {
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .index-page .header .logo::before {
+    top: -30px;
+  }
+
+  .slider-section__body {
+    margin-top: 20px;
+  }
+
+  .slider-default__price {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .text-page__row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .text-page__row .caption {
+    grid-column: initial;
+    order: 1;
+  }
+
+  .text-page__text {
+    order: 3;
+    padding: 20px 0;
+
+    &::before {
+      right: -30px;
+    }
+  }
+
+  .text-page__row .picture {
+    width: 100%;
+    max-height: initial;
+    padding-top: calc(220 / 360 * 100%);
+    order: 2;
+    left: -20px;
+    width: calc(100% + 40px);
+    margin-top: 20px;
+  }
+
+  .breadcrumbs {
+    padding: 25px 30px;
+  }
+
+  .text-block__line {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .text-block ul,
+  .text-block ol {
+    left: -20px;
+    width: calc(100% + 40px);
+    position: relative;
+  }
+
+  .text-block ul li,
+  .text-block ol li {
+    padding-left: 60px;
+  }
+
+  .image-block {
+    min-height: 500px;
+  }
+
+  .image-block__content {
+    padding: 40px;
+    max-width: 470px;
   }
 }
