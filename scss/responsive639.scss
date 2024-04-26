@@ -83,4 +83,35 @@
     height: 50px;
     background-size: 15px;
   }
+
+  .payment-methods__top {
+    padding: 30px 15px;
+  }
+
+  .payment-methods__item .picture {
+    width: 120px;
+    height: 70px;
+  }
+
+  .payment-methods__item {
+    padding-left: 140px;
+    min-height: 70px;
+  }
+
+  .payment-methods__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .payment-methods__bottom {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    font-size: 14px;
+    line-height: 20px;
+
+    strong {
+      margin-right: 0;
+    }
+  }
 }

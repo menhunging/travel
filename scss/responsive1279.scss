@@ -94,4 +94,76 @@
     min-height: 600px;
     padding: 40px 0;
   }
+
+  .our-values li {
+    padding-left: 90px;
+  }
+
+  .our-values .picture {
+    width: 59px;
+    height: 59px;
+  }
+
+  .our-values ul {
+    margin-top: 50px;
+  }
+
+  .teams__head {
+    grid-template-columns: 50% 45%;
+    gap: 20px 0;
+  }
+
+  .types-services__list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0;
+    margin: 0;
+  }
+
+  .types-services__content {
+    margin-top: 20px;
+  }
+
+  .types-services__slider {
+    margin-top: 30px;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: flex;
+    }
+  }
+
+  .payment-methods__top {
+    padding: 50px 40px;
+  }
+
+  .payment-methods__bottom {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .payment-methods__item {
+    width: calc(50% - 10px);
+    padding-left: 170px;
+  }
+
+  .hotels-list {
+    height: auto;
+    flex-direction: row;
+    gap: 40px 20px;
+  }
+
+  .hotels-item {
+    width: calc(50% - 20px);
+  }
+
+  .hotels {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .hotels__list {
+    max-width: 100%;
+    gap: 20px;
+  }
 }

@@ -5,6 +5,65 @@
     width: calc(100% + 30px);
     height: calc(100% + 17px);
   }
+
+  .payment-methods__item {
+    min-height: initial;
+    padding: 0;
+  }
+
+  .payment-methods__item .picture {
+    position: relative;
+    width: 100%;
+    height: 140px;
+
+    img {
+      width: 150px;
+      height: 140px;
+    }
+  }
+
+  .payment-methods__text {
+    margin-top: 10px;
+  }
+
+  .payment-methods__top {
+    padding: 20px 15px;
+    clip-path: polygon(0% 0%, 83% 0, 100% 8%, 100% 100%, 0% 100%);
+  }
+
+  .payment-methods__bottom {
+    padding: 15px;
+  }
+
+  .hotels {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .hotels .letter {
+    font-size: 20px;
+    line-height: 20px;
+    top: -4px;
+  }
+
+  .hotels-item {
+    padding-left: 30px;
+  }
+
+  .hotels-item .picture {
+    width: 25px;
+    height: 15px;
+    display: none;
+  }
+
+  .hotels-item a:hover + .picture {
+    right: -35px;
+    opacity: 1;
+  }
+
+  .hotels__list {
+    gap: 15px;
+  }
 }
 
 @media (max-width: 359px) {
