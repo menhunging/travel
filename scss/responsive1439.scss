@@ -82,4 +82,16 @@
   .hotels__list {
     max-width: 210px;
   }
+
+  .slider-links {
+    width: 1150px;
+  }
+
+  .header-info {
+    gap: 20px;
+  }
+
+  .country-menu__col a::before {
+    left: calc(100% + 26px);
+  }
 }

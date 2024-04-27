@@ -166,4 +166,94 @@
     max-width: 100%;
     gap: 20px;
   }
+
+  .country-page__content {
+    padding-left: 280px;
+    gap: 20px;
+  }
+
+  .country-page__content .picture {
+    width: calc(100% + 40px);
+    height: 400px;
+    left: -20px;
+  }
+
+  .country-menu {
+    width: 260px;
+    padding: 50px 30px;
+  }
+
+  .country-menu__col a {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .slider-links {
+    width: 924px;
+  }
+
+  .transfers-item__body {
+    padding-left: 45px;
+  }
+
+  .table .th:first-child {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .table .td:first-child {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .table .td {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .table-wrapper {
+    padding-right: 30px;
+  }
+
+  .transfers-item__head::after {
+    right: 30px;
+  }
+
+  .visa-block {
+    padding: 30px;
+    margin: 20px 0;
+  }
+
+  .transfers-list {
+    margin-top: 20px;
+  }
+
+  .country-gallery {
+    padding: 50px 0;
+    margin-bottom: 50px;
+  }
+
+  .swiper-controls::before {
+    max-width: 570px;
+  }
+
+  .country-menu__row {
+    height: 432px;
+  }
+
+  .slider-links {
+    height: 432px;
+  }
+
+  .country-menu__line + .country-menu__line {
+    margin-top: 30px;
+  }
+
+  .country-menu__col a::before {
+    left: calc(100% + 8px);
+  }
+
+  .country-page {
+    min-height: 1322px;
+  }
 }

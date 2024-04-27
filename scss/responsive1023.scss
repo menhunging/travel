@@ -238,4 +238,96 @@
     font-size: 18px;
     line-height: 24px;
   }
+
+  .table .th {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .transfers-item__body {
+    padding-left: 0;
+  }
+
+  .transfers-item__head {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 20px 70px 20px 50px;
+  }
+
+  .country-page__content .picture {
+    height: 300px;
+  }
+
+  .country-menu {
+    width: 220px;
+  }
+
+  .country-page__content {
+    padding-left: 240px;
+  }
+
+  .country-menu__col a {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .swiper-controls::before {
+    max-width: 570px;
+  }
+
+  .country-menu {
+    padding: 50px 20px;
+  }
+
+  .country-menu__row {
+    height: 420px;
+  }
+
+  .slider-links {
+    height: 420px;
+  }
+
+  .country-menu__title {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .country-menu__col {
+    width: 179px;
+  }
+
+  .country-menu__col ul {
+    width: 179px;
+  }
+
+  .country-menu__more {
+    margin-top: 20px;
+  }
+
+  .slider-links {
+    width: 688px;
+  }
+
+  .country-menu__close {
+    right: 40px;
+    top: 59px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .swiper-controls {
+    bottom: -54px;
+
+    &::before {
+      max-width: 300px;
+    }
+  }
+
+  .country-page {
+    min-height: 1262px;
+  }
 }

@@ -532,6 +532,7 @@ div {
   height: 100px;
   top: 50%;
   transform: translateY(-50%);
+  margin: 0;
 
   &:after {
     display: none;
@@ -572,35 +573,28 @@ picture {
   gap: 16px;
   position: absolute;
   right: 0;
-  top: -112px;
+  bottom: -110px;
+  min-height: 2px;
 
-  %styleButtonDefault {
+  @include before {
+    right: calc(100% + 50px);
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(128, 128, 148, 0.3);
+    width: 1000%;
+    max-width: 740px;
+  }
+
+  .btn-arrow {
+    position: relative;
+    opacity: 1 !important;
+    pointer-events: initial;
+    cursor: pointer;
+    top: 0;
     left: auto;
     right: auto;
-    top: auto;
-    bottom: auto;
-    position: relative;
-    margin: 0;
-    width: 56px;
-    height: 56px;
-    @include transition(all 0.3s);
-
-    &:hover {
-      background-color: $colorBlack;
-      color: $colorWhite;
-      fill: $colorWhite;
-
-      &::after {
-        color: $colorWhite;
-      }
-    }
-  }
-
-  .swiper-button-next {
-    @extend %styleButtonDefault;
-  }
-  .swiper-button-prev {
-    @extend %styleButtonDefault;
+    transform: translateY(0);
   }
 }
 

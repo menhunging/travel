@@ -2,7 +2,6 @@
   background-color: #f7f9f9;
   padding: 20px 80px;
   position: relative;
-  z-index: 5;
 
   &.opened {
     .header__inner {
@@ -127,7 +126,7 @@
   line-height: 18px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  z-index: 10;
+  z-index: 15;
   color: $colorBlue;
 
   ul {
