@@ -168,6 +168,26 @@
     gap: 20px;
   }
 
+  .text-notice {
+    left: -20px;
+    width: calc(100% + 40px);
+    position: relative;
+    padding: 30px 20px;
+  }
+
+  .text-simple {
+    ul,
+    ol {
+      left: -20px;
+      width: calc(100% + 40px);
+      position: relative;
+
+      li {
+        padding-left: 60px;
+      }
+    }
+  }
+
   .text-block ul,
   .text-block ol {
     left: -20px;
@@ -329,5 +349,34 @@
 
   .country-page {
     min-height: 1262px;
+  }
+
+  .hotels-block {
+    padding-top: 30px;
+    margin-top: 30px;
+  }
+
+  .hotels-block__list {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+  }
+
+  .hotels-block .pagination {
+    margin-top: 50px;
+  }
+
+  .exlusive-programs__link {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .details-section .pagination {
+    margin-top: 50px;
+  }
+
+  .slider-default__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 24px;
+    margin-top: 30px;
   }
 }

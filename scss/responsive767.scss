@@ -513,4 +513,48 @@
   .country-page {
     min-height: initial;
   }
+
+  .hotels-block__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .hotels-block__item .picture {
+    padding-top: calc(379 / 306 * 100%);
+    margin-bottom: 15px;
+  }
+
+  .hotels-block__link {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .hotels-block__price {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+
+  .hotels-block__country {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 10px;
+  }
+
+  .slider-images-small .picture {
+    height: 110px;
+  }
+
+  .exlusive-programs {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tabs-link {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px;
+  }
+
+  .tabs-arrow {
+    display: none;
+  }
 }

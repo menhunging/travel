@@ -64,6 +64,43 @@
   .hotels__list {
     gap: 15px;
   }
+
+  .hotels-block__list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .hotels-block .pagination {
+    margin-top: 30px;
+  }
+
+  .pagination {
+    gap: 5px;
+
+    .btn-arrow {
+      width: 35px;
+      height: 35px;
+      background-size: contain;
+    }
+  }
+
+  .pagination__toh {
+    width: 35px;
+    height: 35px;
+  }
+
+  .pagination__link {
+    width: 35px;
+    height: 35px;
+  }
+
+  .details-section .pagination {
+    margin-top: 30px;
+  }
+
+  .menu-tabs-links .arrow-block::before {
+    display: none;
+  }
 }
 
 @media (max-width: 359px) {
@@ -100,5 +137,10 @@
 
   .footer__center {
     padding-top: 0;
+  }
+
+  h1,
+  .caption--h1 {
+    font-size: 28px;
   }
 }
