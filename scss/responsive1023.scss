@@ -379,4 +379,74 @@
     gap: 30px 24px;
     margin-top: 30px;
   }
+
+  .news {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 24px;
+    margin-top: 30px;
+  }
+
+  .details-section .caption + .text-page__text {
+    margin-top: 30px;
+  }
+
+  .corporative-clients-block {
+    order: 4;
+    padding: 0;
+  }
+
+  .portfolio-events {
+    padding: 30px 0;
+  }
+
+  .contacts {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contacts-info {
+    padding: 30px 0;
+  }
+
+  .company-details {
+    padding: 0;
+
+    ul {
+      margin-top: 10px;
+    }
+  }
+
+  .contacts-info::before {
+    right: -20px;
+  }
+
+  .map {
+    height: 450px;
+  }
+
+  .not-page__left .yps {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 3px 50px;
+  }
+
+  .not-page__content::before {
+    width: 450px;
+    height: 400px;
+    background-size: contain;
+    transform: translateX(-50%);
+    margin: 0;
+    top: 0;
+  }
+
+  .not-page__content {
+    min-height: 530px;
+  }
+
+  .copy {
+    margin-top: 30px;
+    margin-left: 0;
+  }
 }

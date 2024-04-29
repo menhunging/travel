@@ -101,6 +101,33 @@
   .menu-tabs-links .arrow-block::before {
     display: none;
   }
+
+  .company-details li {
+    flex-direction: column;
+    padding: 10px 0;
+
+    .title {
+      width: 100%;
+    }
+
+    .data {
+      width: 100%;
+    }
+  }
+
+  .company-details {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .map {
+    height: 350px;
+  }
+
+  .not-page__content::before {
+    width: 70%;
+    height: 180px;
+  }
 }
 
 @media (max-width: 359px) {
@@ -142,5 +169,19 @@
   h1,
   .caption--h1 {
     font-size: 28px;
+  }
+
+  .contacts-info__phone {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .contacts {
+    font-size: 14px;
+  }
+
+  .contacts-info .link-mail {
+    font-size: 16px;
+    line-height: 20px;
   }
 }

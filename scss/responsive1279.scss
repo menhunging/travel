@@ -352,4 +352,49 @@
     gap: 40px 24px;
     margin-top: 30px;
   }
+
+  .news {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 24px;
+    margin-top: 40px;
+  }
+
+  .details-section .caption + .text-page__text {
+    margin-top: 40px;
+  }
+
+  .portfolio-events {
+    padding: 40px 0;
+  }
+
+  .contacts {
+    margin-top: 40px;
+    grid-template-columns: 1fr 460px;
+    gap: 50px 40px;
+  }
+
+  .map {
+    height: 560px;
+  }
+
+  .not-page {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    padding: 50px 0;
+  }
+
+  .not-page__left {
+    padding: 120px 60px;
+  }
+
+  .not-page__content::before {
+    top: 37px;
+    margin-left: -380px;
+  }
+
+  .copy {
+    margin-top: 50px;
+    margin-left: 8%;
+  }
 }

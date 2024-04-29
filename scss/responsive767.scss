@@ -557,4 +557,65 @@
   .tabs-arrow {
     display: none;
   }
+
+  .contacts-info__phone {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .contacts-info__adress {
+    margin-top: 20px;
+  }
+
+  .contacts-info__timeWork {
+    margin-top: 20px;
+  }
+
+  .contacts-info .link-mail {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 20px;
+  }
+
+  .not-page__right {
+    width: 100%;
+  }
+
+  .not-page__content {
+    flex-wrap: wrap;
+  }
+
+  .not-page__left {
+    width: 100%;
+  }
+
+  .not-page__content::before {
+    width: 50%;
+    height: 240px;
+    background-size: contain;
+    transform: initial;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    filter: drop-shadow(1px 2px 3px $colorBlue);
+    position: relative;
+  }
+
+  .not-page__left {
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .not-page__right {
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .not-page {
+    padding: 30px 0;
+  }
 }
