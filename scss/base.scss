@@ -138,6 +138,8 @@ input {
 
   textarea {
     @extend %stylesInput;
+    padding-top: 15px;
+    height: 80px;
   }
 
   input {
@@ -334,6 +336,7 @@ input {
   right: 0;
   left: auto;
   top: calc(100% + 5px);
+  height: 155px;
 }
 
 .selectric-scroll {
@@ -418,8 +421,8 @@ input {
 .modal__close {
   @include transition(all 0.3s);
   position: absolute;
-  right: 100px;
-  top: 27px;
+  right: 0px;
+  top: 0px;
   display: flex;
   z-index: 10;
   font-weight: 400;
@@ -439,6 +442,9 @@ input {
 }
 
 .modal__content {
+  background-color: rgba(255, 255, 255, 0.85);
+  clip-path: polygon(0% 0%, 87% 0%, 100% 11%, 100% 100%, 0% 100%);
+
   .scroll {
     &::-webkit-scrollbar {
       width: 5px;
@@ -459,7 +465,7 @@ input {
 }
 
 .modal__inner {
-  background-color: $colorWhite;
+  background: transparent;
   margin: 0 auto;
   position: relative;
   background-repeat: no-repeat;
@@ -471,6 +477,12 @@ input {
 .micromodal-slide .modal__container,
 .micromodal-slide .modal__overlay {
   will-change: inherit;
+}
+
+.modal__overlay {
+  background-color: rgba(26, 54, 102, 0.5);
+  backdrop-filter: blur(10px) contrast(0.6);
+  -webkit-backdrop-filter: blur(10px) contrast(0.6);
 }
 
 .selectric-open {

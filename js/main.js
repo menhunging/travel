@@ -576,6 +576,13 @@ $(document).ready(function () {
       },
     });
   }
+
+  if ($(".country-links").length > 0) {
+    $(".country-links .caption").on("click", function () {
+      $(this).toggleClass("opened");
+      $(".country-links__menu").stop().slideToggle();
+    });
+  }
 });
 
 $(window).on("resize", function () {});

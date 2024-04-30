@@ -144,4 +144,9 @@
     gap: 30px 16px;
     margin-top: 30px;
   }
+
+  .country-page .exlusive-programs {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
 }

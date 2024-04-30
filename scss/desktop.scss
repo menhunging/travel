@@ -902,7 +902,36 @@ a.payment-methods__name {
 }
 
 .country-page {
+  padding: 60px 0 120px;
   min-height: 1660px;
+
+  .exlusive-programs {
+    margin-top: 30px;
+
+    .picture {
+      left: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .exlusive-programs__item p {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+  }
+
+  .exlusive-programs__link {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .pagination {
+    margin-top: 50px;
+    background-color: rgba(247, 249, 249, 1);
+    padding: 15px 40px;
+  }
 }
 
 .country-page__inner {
@@ -1493,6 +1522,8 @@ a.payment-methods__name {
 }
 
 .details-section {
+  padding: 60px 0;
+
   .rating-block {
     margin-top: 15px;
     width: 100px;
@@ -2107,4 +2138,207 @@ a.payment-methods__name {
   display: block;
   margin-top: 73px;
   margin-left: 15%;
+}
+
+.country-links {
+  width: 300px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  clip-path: polygon(
+    0 0,
+    90% 0%,
+    100% 5%,
+    100% 95%,
+    89% 100%,
+    0 100%,
+    0% 90%,
+    0% 22%
+  );
+  min-height: 630px;
+  background-image: url("../img/bg-hotels.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  color: $colorWhite;
+  padding: 70px 50px;
+
+  .caption {
+    color: rgba(81, 132, 196, 1);
+    pointer-events: none;
+  }
+
+  ul {
+    margin-top: 30px;
+    width: 100%;
+
+    li {
+      width: 100%;
+    }
+  }
+
+  li + li {
+    margin-top: 20px;
+  }
+
+  a {
+    position: relative;
+    transition: all 0.3s;
+    width: 100%;
+    display: block;
+    text-transform: uppercase;
+
+    &.active {
+      color: $colorGold;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    @include before {
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='15' height='29' viewBox='0 0 15 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14.142 14.4956V28.2842L-9.10759e-05 14.1421L14.142 -4.55379e-05V14.4956Z' fill='%23C4AA6C'/%3e%3c/svg%3e ");
+      background-position: center;
+      background-repeat: no-repeat;
+      left: calc(100% + 35px);
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0;
+      pointer-events: none;
+      width: 20px;
+      height: 20px;
+    }
+
+    &:hover {
+      color: $colorGold;
+    }
+  }
+}
+
+.country-links__menu {
+}
+
+#modal-success {
+  .modal__container {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+.modal-success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 70px 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+
+  .circle {
+    width: 120px;
+    height: 120px;
+    background-color: $colorWhite;
+    border-radius: 50%;
+
+    &--success {
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='56' height='50' viewBox='0 0 56 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M47.8297 0.28125L22.1703 34.1109L7 18.9516L0 25.9516L23.3297 49.2812L56 7.28125L47.8297 0.28125Z' fill='%235184C4'/%3e%3c/svg%3e ");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .caption {
+    margin-top: 20px;
+  }
+
+  .btn {
+    margin-top: 30px;
+  }
+}
+
+#modal-form {
+  .modal__container {
+    width: 100%;
+    max-width: 856px;
+  }
+}
+
+.modal-form {
+  padding: 52px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+
+  .desc {
+    width: 100%;
+    max-width: 602px;
+    margin: 0 auto;
+  }
+}
+
+.input-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  margin-top: 15px;
+
+  .input-item {
+    &--travel {
+      grid-column: 1/4;
+    }
+
+    &--comments {
+      grid-column: 1/4;
+
+      .input-item__icon {
+        top: 15px;
+        transform: initial;
+      }
+    }
+  }
+}
+
+.input-list__controls {
+  display: grid;
+  grid-template-columns: 207px 1fr 207px;
+  gap: 30px;
+  width: 100%;
+  text-align: left;
+  grid-column: 1/4;
+  font-size: 13px;
+  line-height: 20px;
+
+  a {
+    color: $colorBlueLight;
+    @include text-decoration-hover($colorBlueLight);
+  }
+
+  .btn {
+    padding: 19px;
+    width: 100%;
+  }
+}
+
+.captha-block {
+  width: 207px;
+  height: 60px;
+
+  img {
+    display: block;
+    width: 207px;
+    height: 60px;
+  }
 }

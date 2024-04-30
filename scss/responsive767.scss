@@ -88,7 +88,7 @@
   }
 
   .text-page {
-    padding: 30px 0 0;
+    padding: 20px 0 0;
   }
 
   .breadcrumbs {
@@ -119,7 +119,7 @@
   }
 
   .text-block {
-    padding: 30px 0;
+    padding: 20px 0;
   }
 
   .our-values__title {
@@ -157,7 +157,7 @@
   }
 
   .hotels-list {
-    padding: 30px 0;
+    padding: 20px 0;
   }
 
   .hotels-item {
@@ -171,7 +171,7 @@
   }
 
   .hotels {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .country-menu__mobileTitle {
@@ -617,5 +617,112 @@
 
   .not-page {
     padding: 30px 0;
+  }
+
+  .country-links {
+    position: relative;
+    min-height: initial;
+    width: calc(100% + 40px);
+    left: -20px;
+    padding: 15px 20px;
+    clip-path: inherit;
+  }
+
+  .country-links .caption {
+    display: block;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    color: $colorWhite;
+    position: relative;
+    transition: all 0.3s;
+    pointer-events: initial;
+
+    @include before {
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 10px;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='8' viewBox='0 0 16 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M8.17678 2.2769e-05H15.0711L8 7.07109L0.928932 2.2769e-05H8.17678Z' fill='white'/%3e%3c/svg%3e ");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &.opened {
+      color: $colorGold;
+
+      &::before {
+        transform: translateY(-50%) rotate(-180deg);
+      }
+    }
+  }
+
+  .country-links__menu {
+    display: none;
+  }
+
+  .country-page .exlusive-programs__link {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .country-page .exlusive-programs__item p {
+    -webkit-line-clamp: 3;
+  }
+
+  .country-page {
+    padding: 0px 0 50px;
+  }
+
+  .details-section {
+    padding: 20px 0;
+  }
+
+  .modal-success {
+    padding: 50px 10px;
+  }
+
+  .modal-success .btn {
+    margin-top: 10px;
+  }
+
+  .modal-success .circle {
+    width: 100px;
+    height: 100px;
+    background-size: 30px;
+  }
+
+  .modal__content {
+    clip-path: polygon(0% 0%, 79% 0%, 100% 14%, 100% 100%, 0% 100%);
+  }
+
+  #modal-success .modal__container {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 10px;
+  }
+
+  .input-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .input-list .input-item--travel {
+    grid-column: 1 / 3;
+  }
+
+  .input-list .input-item--comments {
+    grid-column: 1 / 3;
+  }
+
+  .input-list__controls {
+    gap: 10px;
+    grid-column: 1 / 3;
+    grid-template-columns: 1fr 1fr;
+
+    .desc {
+      grid-column: 2/3;
+    }
   }
 }

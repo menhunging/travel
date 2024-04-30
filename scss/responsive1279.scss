@@ -276,6 +276,18 @@
     width: calc(100% + 30px);
   }
 
+  .country-page .pagination {
+    margin-top: 20px;
+    left: -15px;
+    position: relative;
+    width: calc(100% + 30px);
+  }
+
+  .country-page .exlusive-programs {
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .hotels-block__list {
     gap: 30px 15px;
   }
@@ -396,5 +408,17 @@
   .copy {
     margin-top: 50px;
     margin-left: 8%;
+  }
+
+  .country-links {
+    width: 260px;
+  }
+
+  .country-page {
+    padding: 30px 0 60px;
+  }
+
+  .details-section {
+    padding: 30px 0;
   }
 }

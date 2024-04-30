@@ -128,6 +128,46 @@
     width: 70%;
     height: 180px;
   }
+
+  .country-page .pagination {
+    margin-top: 0;
+  }
+
+  .input-list {
+    grid-template-columns: 1fr;
+  }
+
+  .input-list .input-item--travel {
+    grid-column: 1 / 2;
+  }
+
+  .input-list .input-item--comments {
+    grid-column: 1 / 2;
+  }
+
+  .input-list__controls {
+    gap: 10px;
+    grid-column: 1 / 2;
+    grid-template-columns: 1fr;
+
+    .desc {
+      grid-column: 1/2;
+    }
+  }
+
+  .captha-block {
+    width: 100%;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  #modal-form .modal__content {
+    clip-path: polygon(0% 0%, 83% 0%, 100% 6%, 100% 100%, 0% 100%);
+  }
 }
 
 @media (max-width: 359px) {
