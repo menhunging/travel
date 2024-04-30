@@ -682,6 +682,10 @@
 
   .modal-success {
     padding: 50px 10px;
+
+    .modal__container {
+      padding: 50px 10px;
+    }
   }
 
   .modal-success .btn {
@@ -701,7 +705,7 @@
   #modal-success .modal__container {
     width: 100%;
     max-width: 500px;
-    padding: 30px 10px;
+    padding: 50px 10px;
   }
 
   .input-list {
