@@ -5168,11 +5168,6 @@ a.payment-methods__name:hover {
   .modal-success {
     padding: 50px 10px;
   }
-  .modal-success .modal__container {
-    width: 100%;
-    max-width: 500px;
-    padding: 50px 10px;
-  }
   .modal-success .btn {
     margin-top: 10px;
   }
@@ -5183,9 +5178,6 @@ a.payment-methods__name:hover {
   }
   .modal__content {
     clip-path: polygon(0% 0%, 79% 0%, 100% 14%, 100% 100%, 0% 100%);
-  }
-  #modal-form .modal__container {
-    padding: 60px 15px;
   }
   .input-list {
     grid-template-columns: 1fr 1fr;
@@ -5203,6 +5195,14 @@ a.payment-methods__name:hover {
   }
   .input-list__controls .desc {
     grid-column: 2/3;
+  }
+  #modal-success .modal__container {
+    width: 100%;
+    max-width: 500px;
+    padding: 50px 10px;
+  }
+  #modal-form .modal__container {
+    padding: 60px 15px;
   }
 }
 @media (max-width: 639px) {
