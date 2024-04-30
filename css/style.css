@@ -5169,6 +5169,8 @@ a.payment-methods__name:hover {
     padding: 50px 10px;
   }
   .modal-success .modal__container {
+    width: 100%;
+    max-width: 500px;
     padding: 50px 10px;
   }
   .modal-success .btn {
@@ -5182,10 +5184,8 @@ a.payment-methods__name:hover {
   .modal__content {
     clip-path: polygon(0% 0%, 79% 0%, 100% 14%, 100% 100%, 0% 100%);
   }
-  #modal-success .modal__container {
-    width: 100%;
-    max-width: 500px;
-    padding: 50px 10px;
+  #modal-form .modal__container {
+    padding: 60px 15px;
   }
   .input-list {
     grid-template-columns: 1fr 1fr;
