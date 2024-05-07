@@ -685,6 +685,7 @@ video {
     align-items: center;
     justify-content: center;
     transition: all 0.3s;
+    color: #1a3666;
 
     &:hover {
       background-color: $colorWhite;
@@ -784,6 +785,11 @@ video {
 
 .icon-vk {
   background-image: url("../img/svg/ic-vk.svg");
+}
+
+.ui-datepicker{
+  width: 100%;
+  max-width: 696px;
 }
 
 @media (min-width: 1200px) {

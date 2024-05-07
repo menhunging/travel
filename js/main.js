@@ -185,18 +185,6 @@ $(document).ready(function () {
     function sliderinit() {
       sliders.forEach((slider, index) => {
         if (!slider.swiper) {
-          // if ($(slider).hasClass("slider-default--spaces")) {
-          //   count = 2;
-          //   initial = $(slider).find(".slider-default__slide").length;
-
-          //   navNext = $(slider)
-          //     .parents(".slider-default-wrapper")
-          //     .find(".arrows-controls__right")[0];
-          //   navPrev = $(slider)
-          //     .parents(".slider-default-wrapper")
-          //     .find(".arrows-controls__left")[0];
-          // }
-
           mySwipers[index] = new Swiper(slider, {
             slidesPerView: 3,
             spaceBetween: 24,
@@ -206,7 +194,7 @@ $(document).ready(function () {
             },
             breakpoints: {
               0: {
-                slidesPerView: 1,
+                slidesPerView: 1.25,
                 spaceBetween: 16,
               },
               480: {
@@ -581,6 +569,80 @@ $(document).ready(function () {
     $(".country-links .caption").on("click", function () {
       $(this).toggleClass("opened");
       $(".country-links__menu").stop().slideToggle();
+    });
+  }
+
+  if ($(".btn-more-text").length > 0) {
+    $(".btn-more-text").on("click", function (event) {
+      event.preventDefault();
+
+      $(".btn-more-text")
+        .toggleClass("active")
+        .parents("div")
+        .find(".hidden-text")
+        .stop()
+        .slideToggle();
+    });
+  }
+
+  if ($("#datepicker").length > 0) {
+    $("#datepicker").daterangepicker(
+      {
+        showWeekNumbers: true,
+        autoApply: true,
+        locale: {
+          format: "MM/DD/YYYY",
+          separator: " - ",
+          applyLabel: "Apply",
+          cancelLabel: "Cancel",
+          fromLabel: "From",
+          toLabel: "To",
+          customRangeLabel: "Custom",
+          weekLabel: "W",
+          daysOfWeek: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+          monthNames: [
+            "Январь",
+            "Февраль",
+            "Март",
+            "Апрель",
+            "Май",
+            "Июнь",
+            "Июль",
+            "Август",
+            "Сентябрь",
+            "Октрябрь",
+            "Ноябрь",
+            "Декабрь",
+          ],
+          firstDay: 1,
+        },
+        startDate: "05/01/2024",
+        endDate: "05/07/2024",
+        opens: "center",
+        drops: "auto",
+      },
+      function (start, end, label) {
+        // console.log(
+        //   "New date range selected: " +
+        //     start.format("YYYY-MM-DD") +
+        //     " to " +
+        //     end.format("YYYY-MM-DD") +
+        //     " (predefined range: " +
+        //     label +
+        //     ")"
+        // );
+      }
+    );
+  }
+
+  if ($(".tabs-mobile__item").length > 0) {
+    $(".tabs-mobile__item .head").on("click", function () {
+      $(this)
+        .toggleClass("opened")
+        .parents(".tabs-mobile__item")
+        .find(".body")
+        .stop()
+        .slideToggle();
     });
   }
 });

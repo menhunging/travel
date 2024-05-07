@@ -729,4 +729,34 @@
   #modal-form .modal__container {
     padding: 60px 15px;
   }
+
+  .grettings {
+    max-height: 600px;
+  }
+
+  .index-page .menu-invis {
+    height: auto;
+    max-height: initial;
+  }
+
+  .details-section__slider {
+    .sale {
+      top: -29px;
+      font-size: 20px;
+      line-height: 28px;
+      gap: 20px;
+      padding: 15px 0;
+      width: 260px;
+      height: 60px;
+      clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 10% 99%, 0% 50%, 10% 0%);
+    }
+  }
+
+  .details-section .tabs {
+    display: none;
+  }
+
+  .tabs-mobile {
+    display: flex;
+  }
 }

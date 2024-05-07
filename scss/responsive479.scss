@@ -168,6 +168,27 @@
   #modal-form .modal__content {
     clip-path: polygon(0% 0%, 83% 0%, 100% 6%, 100% 100%, 0% 100%);
   }
+
+  .details-section__slider {
+    .sale {
+      top: -25px;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 10px 0;
+      width: 180px;
+      gap: 10px;
+      height: 50px;
+      clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 10% 99%, 0% 50%, 10% 0%);
+    }
+  }
+
+  .slider-default__item .picture{
+    padding-top: calc(360 / 340* 100%);
+  }
+
+  .hotels-block__list{
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 359px) {
@@ -224,4 +245,6 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  
 }

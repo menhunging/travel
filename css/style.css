@@ -852,6 +852,7 @@ video::-webkit-media-controls {
   align-items: center;
   justify-content: center;
   transition: all 0.3s;
+  color: #1a3666;
 }
 .pagination__link:hover {
   background-color: rgb(255, 255, 255);
@@ -932,6 +933,11 @@ video::-webkit-media-controls {
 
 .icon-vk {
   background-image: url("../img/svg/ic-vk.svg");
+}
+
+.ui-datepicker {
+  width: 100%;
+  max-width: 696px;
 }
 
 @media (min-width: 1200px) {
@@ -1459,6 +1465,7 @@ h4,
 .phone-block__invis ul {
   background-color: #f7f9f9;
   padding: 20px 10px;
+  border-radius: 10px;
 }
 .phone-block__invis li {
   text-align: center;
@@ -1579,6 +1586,8 @@ h4,
 }
 .footer__links a {
   color: rgb(0, 0, 42);
+  text-transform: uppercase;
+  font-size: 13px;
 }
 
 section {
@@ -1613,6 +1622,8 @@ section {
 }
 .index-page .menu-invis {
   color: rgb(255, 255, 255);
+  height: 100vh;
+  max-height: 900px;
 }
 .index-page .menu-invis ul li a {
   position: relative;
@@ -1630,7 +1641,7 @@ section {
   width: calc(100% - 48px);
   left: 24px;
   border-bottom: dashed 1px rgb(255, 255, 255);
-  opacity: 0.33;
+  opacity: 0.2;
 }
 .index-page .menu-invis .link-mail {
   color: rgb(255, 255, 255);
@@ -1640,8 +1651,9 @@ section {
 }
 .index-page .menu-invis::before {
   background-color: rgba(26, 54, 102, 0.5);
-  backdrop-filter: blur(10px) contrast(0.6);
-  -webkit-backdrop-filter: blur(10px) contrast(0.6);
+  backdrop-filter: blur(10px) contrast(0.7);
+  -webkit-backdrop-filter: blur(10px) contrast(0.7);
+  clip-path: initial;
 }
 .index-page .phone-block__arrow svg path {
   fill: rgb(255, 255, 255);
@@ -1650,6 +1662,7 @@ section {
 .grettings {
   width: 100%;
   height: calc(100vh + 100px);
+  max-height: 900px;
   position: relative;
   margin-top: -100px;
 }
@@ -1660,6 +1673,10 @@ section {
   width: 100%;
   height: 100%;
 }
+.slider-section:nth-child(2n+1) {
+  background-color: rgb(247, 249, 249);
+}
+
 .slider-section__head {
   display: flex;
   align-items: flex-end;
@@ -1669,6 +1686,7 @@ section {
 }
 .slider-section__head .link {
   transform: translateY(-10px);
+  text-transform: uppercase;
 }
 
 .slider-section__body {
@@ -1753,6 +1771,12 @@ section {
 .slider-default__content > * {
   transition: color 0.3s;
 }
+.slider-default__content p {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
 
 .slider-default__link {
   font-size: 28px;
@@ -1760,6 +1784,7 @@ section {
   line-height: 32px;
   color: rgb(26, 54, 102);
   transition: color 0.3s;
+  color: #00002a;
 }
 
 .slider-default__price {
@@ -1842,7 +1867,7 @@ section {
 }
 
 .text-page {
-  padding: 70px 0;
+  padding: 0;
   padding-bottom: 0;
 }
 .text-page .text-block:last-child {
@@ -2332,6 +2357,10 @@ a.payment-methods__name:hover {
   min-width: 20px;
 }
 
+.hotels-section {
+  padding: 30px 0 0;
+}
+
 .hotels {
   position: relative;
   background-image: url("../img/bg-hotels.jpg");
@@ -2427,8 +2456,7 @@ a.payment-methods__name:hover {
 }
 
 .country-page {
-  padding: 60px 0 120px;
-  min-height: 1660px;
+  padding: 0 0 120px;
 }
 .country-page .exlusive-programs {
   margin-top: 30px;
@@ -2470,6 +2498,8 @@ a.payment-methods__name:hover {
   width: calc(100% + 80px);
   height: 400px;
   left: -80px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .country-page__title {
@@ -2720,6 +2750,7 @@ a.payment-methods__name:hover {
   left: 0;
   top: 0;
   width: 300px;
+  min-height: 1660px;
   background-image: url("../img/bg-hotels.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -2992,7 +3023,7 @@ a.payment-methods__name:hover {
 }
 
 .details-section {
-  padding: 60px 0;
+  padding: 30px 0 130px;
 }
 .details-section .rating-block {
   margin-top: 15px;
@@ -3031,9 +3062,31 @@ a.payment-methods__name:hover {
 .details-section .slider-section {
   padding-bottom: 0;
 }
+.details-section .slider-section:nth-child(2n+1) {
+  background-color: transparent;
+}
 
 .details-section__slider {
   margin-top: 30px;
+  position: relative;
+}
+.details-section__slider .sale {
+  position: absolute;
+  right: 0;
+  top: -39px;
+  font-size: 28px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 25px 0;
+  width: 360px;
+  height: 80px;
+  z-index: 3;
+  background-color: #5184c4;
+  color: #fff;
+  clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 10% 99%, 0% 50%, 10% 0%);
 }
 
 .slider-images-big {
@@ -3395,9 +3448,22 @@ a.payment-methods__name:hover {
   text-decoration: none;
   transition: all 0.3s;
 }
+.corporative-clients-block ol li {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+}
+.corporative-clients-block ol li::before {
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 .portfolio-events {
   padding: 100px 0;
+}
+
+.contacts-section {
+  padding: 0 0 100px;
 }
 
 .contacts {
@@ -3510,6 +3576,7 @@ a.payment-methods__name:hover {
   max-width: 1075px;
   margin: auto;
   padding: 100px 0;
+  transform: translateX(-90px);
 }
 
 .not-page__content {
@@ -3771,6 +3838,71 @@ a.payment-methods__name:hover {
   display: block;
   width: 207px;
   height: 60px;
+}
+
+.btn-more-text.active {
+  display: none;
+}
+
+.hidden-text {
+  display: none;
+  margin-top: 30px;
+}
+.hidden-text p + p {
+  margin-top: 30px;
+}
+
+.tabs-mobile {
+  left: -20px;
+  width: calc(100% + 40px);
+  position: relative;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tabs-mobile__item {
+  width: 100%;
+}
+.tabs-mobile__item .text-simple {
+  padding: 0;
+  margin: 0;
+}
+.tabs-mobile__item .head {
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  background-color: rgb(247, 249, 249);
+  padding: 14px 20px;
+  display: block;
+  width: 100%;
+  position: relative;
+  color: rgb(26, 54, 102);
+}
+.tabs-mobile__item .head.opened::before {
+  transform: scale(1, -1) translateY(50%);
+}
+.tabs-mobile__item .head::before {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M7 6.114L12.4447 0.916646L14 2.4013L7 9.08331L-5.8416e-07 2.4013L1.55531 0.916647L7 6.114Z' fill='white'/%3e%3c/svg%3e ");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(81, 132, 196);
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.tabs-mobile__item .body {
+  display: none;
+  padding: 23px 20px;
 }
 
 @media (min-width: 1280px) {
@@ -4228,6 +4360,12 @@ a.payment-methods__name:hover {
   .details-section {
     padding: 30px 0;
   }
+  .index-page .menu-invis {
+    max-height: 878px;
+  }
+  .not-page {
+    transform: translateX(0);
+  }
 }
 @media (max-width: 1023px) {
   .header {
@@ -4597,6 +4735,9 @@ a.payment-methods__name:hover {
   }
   .modal-form {
     padding: 50px 30px;
+  }
+  .index-page .menu-invis {
+    max-height: 868px;
   }
 }
 @media (max-width: 767px) {
@@ -5204,6 +5345,29 @@ a.payment-methods__name:hover {
   #modal-form .modal__container {
     padding: 60px 15px;
   }
+  .grettings {
+    max-height: 600px;
+  }
+  .index-page .menu-invis {
+    height: auto;
+    max-height: initial;
+  }
+  .details-section__slider .sale {
+    top: -29px;
+    font-size: 20px;
+    line-height: 28px;
+    gap: 20px;
+    padding: 15px 0;
+    width: 260px;
+    height: 60px;
+    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 10% 99%, 0% 50%, 10% 0%);
+  }
+  .details-section .tabs {
+    display: none;
+  }
+  .tabs-mobile {
+    display: flex;
+  }
 }
 @media (max-width: 639px) {
   .header .phone-block {
@@ -5455,6 +5619,22 @@ a.payment-methods__name:hover {
   }
   #modal-form .modal__content {
     clip-path: polygon(0% 0%, 83% 0%, 100% 6%, 100% 100%, 0% 100%);
+  }
+  .details-section__slider .sale {
+    top: -25px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 0;
+    width: 180px;
+    gap: 10px;
+    height: 50px;
+    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 10% 99%, 0% 50%, 10% 0%);
+  }
+  .slider-default__item .picture {
+    padding-top: 105.8823529412%;
+  }
+  .hotels-block__list {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 359px) {
