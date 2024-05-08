@@ -465,7 +465,25 @@
     padding: 50px 30px;
   }
 
-  .index-page .menu-invis {
-    max-height: 868px;
+  .menu-invis {
+    top: 67px;
+  }
+
+  .index-page {
+    .header {
+      .menu-invis {
+        top: 67px;
+      }
+
+      .btn-menu.opened {
+        left: 281px;
+        top: 33px;
+      }
+    }
+  }
+
+  .btn-menu.opened {
+    left: 300px;
+    top: 70px;
   }
 }

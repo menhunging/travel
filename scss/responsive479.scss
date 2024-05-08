@@ -182,12 +182,36 @@
     }
   }
 
-  .slider-default__item .picture{
-    padding-top: calc(360 / 340* 100%);
+  .slider-default__item .picture {
+    padding-top: calc(360 / 340 * 100%);
   }
 
-  .hotels-block__list{
+  .hotels-block__list {
     margin-bottom: 30px;
+  }
+
+  .index-page .header .logo::before {
+    top: -20px;
+    left: -20px;
+    width: 100vw;
+    height: calc(100% + 36px);
+    clip-path: none;
+  }
+
+  .btn-menu {
+    top: 34px;
+  }
+
+  .index-page {
+    .header {
+      .menu-invis {
+        top: 64px;
+      }
+    }
+  }
+
+  .menu-invis {
+    top: 0;
   }
 }
 
@@ -245,6 +269,15 @@
     font-size: 16px;
     line-height: 20px;
   }
+  .index-page {
+    .header {
+      .menu-invis {
+        top: 61px;
+      }
+    }
+  }
 
-  
+  .menu-invis {
+    top: 0;
+  }
 }

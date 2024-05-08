@@ -82,11 +82,15 @@
   left: 0;
   top: 50px;
   overflow: hidden;
-  z-index: 5;
+  z-index: 21;
   transition: all 0.3s;
 
   &.opened {
     left: 450px;
+
+    &::before {
+      opacity: 1;
+    }
 
     &::after {
       transform: scale(-1, 1);
@@ -119,16 +123,16 @@
 .menu-invis {
   position: absolute;
   left: -450px;
-  top: 0;
   width: 450px;
-  padding: 160px 0;
+  padding: 150px 0;
   transition: left 0.3s;
   font-size: 16px;
   font-weight: 800;
   line-height: 18px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  z-index: 15;
+  z-index: 20;
+  top: 0;
   color: $colorBlue;
 
   ul {

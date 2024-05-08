@@ -1,9 +1,5 @@
 @media (max-width: 639px) {
   .header {
-    .phone-block {
-      display: none;
-    }
-
     .btn {
       svg {
         display: none;
@@ -21,20 +17,6 @@
   .header .btn {
     padding-left: 10px;
     padding-right: 10px;
-  }
-
-  .menu-invis {
-    .phone-block {
-      padding: 0 20px;
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      margin-top: 20px;
-
-      .phone {
-        padding: 0;
-      }
-    }
   }
 
   .btn-menu {

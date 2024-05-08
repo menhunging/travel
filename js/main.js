@@ -7,7 +7,7 @@ $(document).ready(function () {
   if ($(".btn-menu").length > 0) {
     let menu = $(".menu-invis");
     let burger = $(".btn-menu");
-    let header = $(".header");
+    // let header = $(".header");
 
     burger.on("click", function () {
       if (menu.hasClass("opened")) {
@@ -15,7 +15,6 @@ $(document).ready(function () {
       } else {
         burger.addClass("opened");
         menu.addClass("opened");
-        header.addClass("opened");
 
         $(document).mouseup(function (e) {
           if (
@@ -32,7 +31,6 @@ $(document).ready(function () {
     function closeMenu() {
       burger.removeClass("opened");
       menu.removeClass("opened");
-      header.removeClass("opened");
       $(document).off("mouseup");
     }
   }

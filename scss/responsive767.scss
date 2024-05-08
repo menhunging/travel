@@ -215,6 +215,7 @@
     position: relative;
     left: -20px;
     clip-path: inherit;
+    min-height: initial;
     padding: 14px 20px;
 
     &.opened {
@@ -758,5 +759,53 @@
 
   .tabs-mobile {
     display: flex;
+  }
+
+  .header .phone-block {
+    display: none;
+  }
+
+  .menu-invis {
+    top: 0;
+
+    .phone-block {
+      padding: 0 20px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-top: 20px;
+
+      .phone {
+        padding: 0;
+      }
+    }
+  }
+
+  .index-page {
+    .header {
+      .logo::before {
+        width: 364px;
+      }
+
+      .menu-invis {
+        top: 59px;
+      }
+
+      .btn-menu {
+        top: 32px;
+
+        &.opened {
+          top: 30px;
+        }
+      }
+    }
+  }
+
+  .btn-menu {
+    top: 58px;
+
+    &.opened {
+      top: 14px;
+    }
   }
 }

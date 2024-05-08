@@ -65,7 +65,7 @@
   }
 
   .index-page .header .logo::before {
-    width: 300px;
+    width: 350px;
     height: 80px;
     left: -80px;
     top: -25px;
@@ -423,10 +423,41 @@
   }
 
   .index-page .menu-invis {
-    max-height: 878px;
+    max-height: 801px;
   }
 
   .not-page {
     transform: translateX(0);
+  }
+
+  .index-page {
+    .header {
+      .menu-invis {
+        top: 77px;
+      }
+
+      .btn-menu.opened {
+        left: 300px;
+        top: 27px;
+      }
+    }
+  }
+
+  .menu-invis {
+    width: 320px;
+    top: 0;
+  }
+
+  .btn-menu {
+    top: 27px;
+  }
+
+  .btn-menu.opened {
+    left: 320px;
+  }
+
+  .menu-invis ul li a {
+    padding: 20px 20px;
+    font-size: 14px;
   }
 }

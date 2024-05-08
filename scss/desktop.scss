@@ -30,12 +30,21 @@ section {
         color: $colorWhite;
       }
     }
+
+    .btn-menu.opened {
+      left: 415px;
+
+      &::before {
+        opacity: 0;
+      }
+    }
   }
 
   .menu-invis {
     color: $colorWhite;
-    height: 100vh;
-    max-height: 900px;
+    height: calc(100vh - 101px);
+    max-height: 799px;
+    top: 101px;
 
     ul {
       li {
@@ -67,7 +76,7 @@ section {
       background-color: rgba(26, 54, 102, 0.5);
       backdrop-filter: blur(10px) contrast(0.7);
       -webkit-backdrop-filter: blur(10px) contrast(0.7);
-      clip-path: initial;
+      clip-path: polygon(0% 0%, 89% 0%, 100% 5%, 100% 100%, 0% 100%);
     }
   }
 

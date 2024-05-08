@@ -102,4 +102,20 @@
   .text-simple {
     padding: 40px 0;
   }
+
+  .menu-invis {
+    width: 430px;
+  }
+
+  .index-page {
+    .header {
+      .btn-menu.opened {
+        left: 400px;
+      }
+    }
+  }
+
+  .btn-menu.opened {
+    left: 430px;
+  }
 }
