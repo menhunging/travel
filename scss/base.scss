@@ -787,7 +787,7 @@ video {
   background-image: url("../img/svg/ic-vk.svg");
 }
 
-.ui-datepicker{
+.ui-datepicker {
   width: 100%;
   max-width: 696px;
 }
@@ -823,5 +823,24 @@ video {
     .header {
       width: calc(100% - 17px);
     }
+  }
+}
+
+@media (max-width: 1600px) and (min-width: 1200px) {
+  html {
+    zoom: 80%;
+    margin-right: calc(-1 * (100vw - 80%)) !important;
+  }
+
+  @-moz-document url-prefix() {
+    html {
+      transform: scale(0.8);
+      transform-origin: left top;
+      width: calc(100% / 0.8);
+      height: calc(100% / 0.8);
+    }
+    // .modalOpen {
+    //   transform: initial;
+    // }
   }
 }
