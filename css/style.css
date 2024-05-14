@@ -972,15 +972,15 @@ video::-webkit-media-controls {
 }
 @media (max-width: 1600px) and (min-width: 1200px) {
   html {
-    zoom: 80%;
-    margin-right: calc(-1 * (100vw - 80%)) !important;
+    zoom: 70%;
+    margin-right: calc(-1 * (100vw - 70%)) !important;
   }
   @-moz-document url-prefix() {
     html {
-      transform: scale(0.8);
+      transform: scale(0.7);
       transform-origin: left top;
-      width: 125%;
-      height: 125%;
+      width: 142.8571428571%;
+      height: 142.8571428571%;
     }
   }
 }
