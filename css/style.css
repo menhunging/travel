@@ -1647,6 +1647,7 @@ section {
   color: rgb(255, 255, 255);
   height: calc(100vh - 101px);
   max-height: 799px;
+  min-height: 799px;
   top: 101px;
 }
 .index-page .menu-invis ul li a {
@@ -5455,6 +5456,7 @@ a.payment-methods__name:hover {
   }
   .index-page .header .menu-invis {
     top: 59px;
+    min-height: initial;
   }
   .index-page .header .btn-menu {
     top: 32px;

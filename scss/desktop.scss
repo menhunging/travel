@@ -44,6 +44,7 @@ section {
     color: $colorWhite;
     height: calc(100vh - 101px);
     max-height: 799px;
+    min-height: 799px;
     top: 101px;
 
     ul {
