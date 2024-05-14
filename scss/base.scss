@@ -829,7 +829,7 @@ video {
 @media (max-width: 1600px) and (min-width: 1200px) {
   html {
     zoom: 70%;
-    margin-right: calc(-1 * (100vw - 70%)) !important;
+    margin-right: calc(-1*(100vw - calc(71% - 7px))) !important;
   }
 
   @-moz-document url-prefix() {
