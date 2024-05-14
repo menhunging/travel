@@ -973,7 +973,7 @@ video::-webkit-media-controls {
 @media (max-width: 1600px) and (min-width: 1200px) {
   html {
     zoom: 70%;
-    margin-right: calc(-1 * (100vw - (71% - 7px))) !important;
+    margin-right: calc(-1 * (100vw - 70.9%)) !important;
   }
   @-moz-document url-prefix() {
     html {
