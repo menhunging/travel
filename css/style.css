@@ -970,20 +970,6 @@ video::-webkit-media-controls {
     width: calc(100% - 17px);
   }
 }
-@media (max-width: 1600px) and (min-width: 1200px) {
-  html {
-    zoom: 70%;
-    margin-right: calc(-1 * (100vw - 70.9%)) !important;
-  }
-  @-moz-document url-prefix() {
-    html {
-      transform: scale(0.7);
-      transform-origin: left top;
-      width: 142.8571428571%;
-      height: 142.8571428571%;
-    }
-  }
-}
 .btn {
   -webkit-appearance: none;
   border-radius: 0;
@@ -1222,6 +1208,13 @@ h2,
 .caption--h2 {
   font-size: 54px;
   line-height: 70px;
+}
+@media (max-width: 1599px) {
+  h2,
+  .caption--h2 {
+    font-size: 42px;
+    line-height: 50px;
+  }
 }
 @media (max-width: 1280px) {
   h2,
@@ -3965,6 +3958,38 @@ a.payment-methods__name:hover {
     transform: translate(calc(-50% - 24px), calc(-50% + 56px));
   }
 }
+@media (max-width: 1599px) {
+  .menu-invis {
+    padding: 50px 0;
+  }
+  .menu-invis ul li a {
+    padding: 15px 70px;
+  }
+  .grettings {
+    max-height: 680px;
+  }
+  .index-page .menu-invis {
+    max-height: 579px;
+    min-height: 579px;
+  }
+  section {
+    padding: 50px 0;
+  }
+  .slider-default__item .picture {
+    padding-top: 116.6666666667%;
+  }
+  .slider-default__link {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .slider-section__body {
+    margin-top: 45px;
+  }
+  .phone-block {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
 @media (max-width: 1439px) {
   .logo {
     width: 200px;
@@ -4420,6 +4445,13 @@ a.payment-methods__name:hover {
   .menu-invis ul li a {
     padding: 20px 20px;
     font-size: 14px;
+  }
+  .grettings {
+    max-height: 540px;
+  }
+  .index-page .menu-invis {
+    max-height: 670px;
+    padding: 50px 0;
   }
 }
 @media (max-width: 1023px) {

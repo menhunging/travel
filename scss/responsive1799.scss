@@ -21,3 +21,44 @@
     transform: translate(calc(-50% - 24px), calc(-50% + 56px));
   }
 }
+
+@media (max-width: 1599px) {
+  .menu-invis {
+    padding: 50px 0;
+  }
+
+  .menu-invis ul li a {
+    padding: 15px 70px;
+  }
+
+  .grettings {
+    max-height: 680px;
+  }
+
+  .index-page .menu-invis {
+    max-height: 579px;
+    min-height: 579px;
+  }
+
+  section {
+    padding: 50px 0;
+  }
+
+  .slider-default__item .picture {
+    padding-top: calc(350 / 300 * 100%);
+  }
+
+  .slider-default__link {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .slider-section__body {
+    margin-top: 45px;
+  }
+
+  .phone-block{
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

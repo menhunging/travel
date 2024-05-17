@@ -826,21 +826,21 @@ video {
   }
 }
 
-@media (max-width: 1600px) and (min-width: 1200px) {
-  html {
-    zoom: 70%;
-    margin-right: calc(-1 * (100vw - 70.9%)) !important;
-  }
+// @media (max-width: 1600px) and (min-width: 1200px) {
+//   html {
+//     zoom: 70%;
+//     margin-right: calc(-1 * (100vw - 70.9%)) !important;
+//   }
 
-  @-moz-document url-prefix() {
-    html {
-      transform: scale(0.7);
-      transform-origin: left top;
-      width: calc(100% / 0.7);
-      height: calc(100% / 0.7);
-    }
-    // .modalOpen {
-    //   transform: initial;
-    // }
-  }
-}
+//   @-moz-document url-prefix() {
+//     html {
+//       transform: scale(0.7);
+//       transform-origin: left top;
+//       width: calc(100% / 0.7);
+//       height: calc(100% / 0.7);
+//     }
+//     // .modalOpen {
+//     //   transform: initial;
+//     // }
+//   }
+// }
