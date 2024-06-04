@@ -199,7 +199,7 @@ a {
 }
 
 body {
-  font-family: "Raleway";
+  font-family: "Montserrat";
   background-color: rgb(255, 255, 255);
   font-size: 22px;
   font-weight: 400;
@@ -221,7 +221,7 @@ label,
 textarea,
 input {
   -webkit-appearance: none;
-  font-family: "Raleway";
+  font-family: "Montserrat";
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -541,7 +541,7 @@ input {
 }
 
 .modal {
-  font-family: "Raleway";
+  font-family: "Montserrat";
   display: none;
   width: 100vw;
   height: 100%;
@@ -1171,7 +1171,7 @@ h4,
 h5,
 h6,
 .caption {
-  font-family: "Raleway";
+  font-family: "Montserrat";
   font-weight: 600;
   color: rgb(26, 54, 102);
 }
@@ -3659,6 +3659,11 @@ a.payment-methods__name:hover {
   background-color: rgb(81, 132, 196);
   z-index: -1;
 }
+.not-page__left .text {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .not-page__right {
   width: 40%;
   display: flex;
