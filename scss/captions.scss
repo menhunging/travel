@@ -16,6 +16,11 @@ h1,
   line-height: 76px;
   font-weight: 500;
 
+  @media (max-width: 1799px) {
+    font-size: 60px;
+    line-height: 65px;
+  }
+
   @media (max-width: 1280px) {
     font-size: 55px;
     line-height: 66px;
@@ -62,6 +67,11 @@ h3,
 .caption--h3 {
   font-size: 38px;
   line-height: 48px;
+
+  @media (max-width: 1799px) {
+    font-size: 28px;
+    line-height: 38px;
+  }
 
   @media (max-width: 1280px) {
     font-size: 28px;

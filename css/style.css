@@ -1182,6 +1182,13 @@ h1,
   line-height: 76px;
   font-weight: 500;
 }
+@media (max-width: 1799px) {
+  h1,
+  .caption--h1 {
+    font-size: 60px;
+    line-height: 65px;
+  }
+}
 @media (max-width: 1280px) {
   h1,
   .caption--h1 {
@@ -1242,6 +1249,13 @@ h3,
 .caption--h3 {
   font-size: 38px;
   line-height: 48px;
+}
+@media (max-width: 1799px) {
+  h3,
+  .caption--h3 {
+    font-size: 28px;
+    line-height: 38px;
+  }
 }
 @media (max-width: 1280px) {
   h3,
@@ -1349,6 +1363,7 @@ h4,
   flex-direction: column;
   position: relative;
   padding-right: 25px;
+  white-space: nowrap;
 }
 .phone-block:hover .phone-block__invis {
   display: block;
@@ -3957,10 +3972,14 @@ a.payment-methods__name:hover {
     padding: 20px 60px;
   }
   .footer__center {
-    padding: 50px 100px 100px;
+    padding: 80px 100px 100px;
   }
   .footer__links {
-    transform: translate(calc(-50% - 24px), calc(-50% + 56px));
+    transform: translate(calc(-50% - 24px), calc(-50% + 80px));
+  }
+  .header .btn {
+    padding-left: 22px;
+    padding-right: 22px;
   }
 }
 @media (max-width: 1599px) {
@@ -3993,6 +4012,198 @@ a.payment-methods__name:hover {
   .phone-block {
     font-size: 18px;
     line-height: 28px;
+  }
+  .text-page__row {
+    gap: 30px 50px;
+  }
+  .text-page__text {
+    padding: 30px 50px 30px 0;
+  }
+  body {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .text-block {
+    padding: 50px 0;
+  }
+  .image-block {
+    padding: 40px 0;
+    min-height: 700px;
+  }
+  .image-block__content {
+    padding: 40px 50px;
+  }
+  .payment-methods__top {
+    padding: 45px 50px;
+  }
+  .types-services__item .picture {
+    padding-top: 119.0476190476%;
+  }
+  .hotels__list {
+    gap: 16px;
+  }
+  .hotels {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 30px;
+  }
+  .hotels .letter {
+    font-size: 30px;
+    line-height: 35px;
+    left: 15px;
+    top: -9px;
+  }
+  .hotels-section {
+    padding: 0;
+  }
+  .country-page__content {
+    padding-left: 340px;
+    gap: 20px;
+  }
+  .country-page__content .picture {
+    left: -41px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .visa-block {
+    padding: 30px;
+  }
+  .transfers-item__head {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 30px 70px 30px 57px;
+  }
+  .transfers-item__head::after {
+    right: 40px;
+  }
+  .country-page {
+    padding: 0 0 60px;
+  }
+  .country-gallery {
+    padding: 60px 0;
+    margin-bottom: 60px;
+  }
+  .slider-gallery .picture {
+    padding-top: 75.2136752137%;
+  }
+  .slider-gallery {
+    margin-top: 30px;
+  }
+  .hotels-block__item .picture {
+    left: 0;
+  }
+  .hotels-block {
+    margin-top: 50px;
+    padding-top: 50px;
+  }
+  .country-menu__col a {
+    font-size: 13px;
+  }
+  .hotels-block .pagination {
+    margin-top: 50px;
+  }
+  .slider-images-big .picture {
+    height: 560px;
+  }
+  .text-simple {
+    padding: 30px 0;
+  }
+  .text-notice {
+    padding: 30px;
+  }
+  .exlusive-programs__item p {
+    margin-top: 15px;
+  }
+  .exlusive-programs__item .picture {
+    padding-top: 100%;
+  }
+  .details-section .pagination {
+    margin-top: 50px;
+  }
+  .exlusive-programs {
+    gap: 30px;
+    margin-top: 50px;
+  }
+  .menu-tabs-links {
+    margin-top: 50px;
+  }
+  .details-section {
+    padding: 30px 0 50px;
+  }
+  .tabs-link {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .slider-default__list {
+    gap: 30px;
+    margin-top: 50px;
+  }
+  .news {
+    gap: 30px;
+    margin-top: 50px;
+  }
+  .details-section .caption + .text-page__text {
+    margin-top: 30px;
+  }
+  .contacts-info {
+    padding: 50px 0;
+  }
+  .contacts {
+    margin-top: 30px;
+    gap: 50px;
+  }
+  .map {
+    height: 450px;
+  }
+  .contacts-info__phone {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .contacts-info__timeWork {
+    margin-top: 25px;
+  }
+  .contacts-info__adress {
+    margin-top: 25px;
+  }
+  .contacts-info .link-mail {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 25px;
+  }
+  .contacts-info .social {
+    margin-top: 30px;
+  }
+  .contacts-info .btn {
+    margin-top: 30px;
+  }
+  .company-details li {
+    padding: 15px 0;
+  }
+  .company-details {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 30px 0;
+  }
+  .country-page__content .picture {
+    height: 320px;
+  }
+  .input-list__controls {
+    align-items: flex-start;
+  }
+  .modal-success .circle {
+    width: 80px;
+    height: 80px;
+    background-size: 30px;
+  }
+  .modal-success {
+    gap: 10px;
+    padding: 50px 10px;
+  }
+  .modal-success .caption {
+    margin-top: 0;
+  }
+  .modal-success .btn {
+    margin-top: 15px;
   }
 }
 @media (max-width: 1439px) {
@@ -4044,10 +4255,10 @@ a.payment-methods__name:hover {
     padding: 25px 60px;
   }
   .text-page {
-    padding: 50px 0 0;
+    padding: 30px 0 0;
   }
   .text-page__row {
-    gap: 50px 60px;
+    gap: 30px 50px;
   }
   .text-block__line {
     gap: 50px;
@@ -4071,10 +4282,10 @@ a.payment-methods__name:hover {
     left: calc(100% + 26px);
   }
   .slider-images-big .picture {
-    height: 580px;
+    height: 575px;
   }
   .text-simple {
-    padding: 40px 0;
+    padding: 30px 0;
   }
   .menu-invis {
     width: 430px;
@@ -4084,6 +4295,10 @@ a.payment-methods__name:hover {
   }
   .btn-menu.opened {
     left: 430px;
+  }
+  body {
+    font-size: 18px;
+    line-height: 26px;
   }
 }
 @media (max-width: 1279px) {

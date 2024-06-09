@@ -59,6 +59,7 @@
   flex-direction: column;
   position: relative;
   padding-right: 25px;
+  white-space: nowrap;
 
   &:hover {
     .phone-block__invis {
