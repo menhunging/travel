@@ -193,7 +193,7 @@
   .index-page .header .logo::before {
     top: -20px;
     left: -20px;
-    width: 100vw;
+    width: calc(100vw + 5px);
     height: calc(100% + 36px);
     clip-path: none;
   }
@@ -236,11 +236,21 @@
   .phone-block__invis ul {
     padding: 10px;
   }
+
+  .index-page .header.scroll .header-info .phone-block {
+    top: -1px;
+  }
+
+  .phone-block__arrow svg {
+    width: 10px;
+    top: 1px;
+    position: relative;
+  }
 }
 
 @media (max-width: 359px) {
   .logo {
-    width: 110px;
+    width: 115px;
     height: 25px;
   }
 
