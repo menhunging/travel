@@ -1309,7 +1309,11 @@ h4,
 .header {
   background-color: #f7f9f9;
   padding: 20px 80px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
 }
 .header.opened .header__inner {
   padding-left: 450px;
@@ -1317,6 +1321,16 @@ h4,
 .header .btn {
   padding-left: 32px;
   padding-right: 32px;
+}
+
+.index-page .header.scroll {
+  background-color: #e4e4e5;
+}
+.index-page .header.scroll .header-info .phone-block {
+  color: rgb(0, 0, 0);
+}
+.index-page .header.scroll .phone-block__arrow svg path {
+  fill: initial;
 }
 
 .header__inner {
@@ -3943,6 +3957,14 @@ a.payment-methods__name:hover {
   padding: 23px 20px;
 }
 
+.mobile-call {
+  display: none;
+}
+
+main {
+  padding-top: 100px;
+}
+
 @media (min-width: 1280px) {
   .menu {
     display: block !important;
@@ -4673,6 +4695,9 @@ a.payment-methods__name:hover {
     max-height: 670px;
     padding: 50px 0;
   }
+  main {
+    padding-top: 80px;
+  }
 }
 @media (max-width: 1023px) {
   .header {
@@ -5056,6 +5081,9 @@ a.payment-methods__name:hover {
   .btn-menu.opened {
     left: 300px;
     top: 70px;
+  }
+  main {
+    padding-top: 70px;
   }
 }
 @media (max-width: 767px) {
@@ -5687,11 +5715,17 @@ a.payment-methods__name:hover {
   .tabs-mobile {
     display: flex;
   }
-  .header .phone-block {
+  .header-info .btn {
     display: none;
   }
   .menu-invis {
     top: 0;
+  }
+  .menu-invis .mobile-call {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 20px;
   }
   .menu-invis .phone-block {
     padding: 0 20px;
@@ -5707,20 +5741,23 @@ a.payment-methods__name:hover {
     width: 364px;
   }
   .index-page .header .menu-invis {
-    top: 59px;
+    top: 55px;
     min-height: initial;
   }
   .index-page .header .btn-menu {
     top: 32px;
   }
   .index-page .header .btn-menu.opened {
-    top: 30px;
+    top: 34px;
   }
   .btn-menu {
     top: 58px;
   }
   .btn-menu.opened {
     top: 14px;
+  }
+  main {
+    padding-top: 75px;
   }
 }
 @media (max-width: 639px) {
@@ -5988,10 +6025,28 @@ a.payment-methods__name:hover {
     top: 34px;
   }
   .index-page .header .menu-invis {
-    top: 64px;
+    top: 59px;
   }
   .menu-invis {
     top: 0;
+  }
+  .phone-block {
+    font-size: 12px;
+    line-height: 16px;
+    padding-right: 20px;
+  }
+  .index-page .header .header-info .phone-block {
+    color: rgb(0, 0, 42);
+  }
+  .index-page .phone-block__arrow svg path {
+    fill: initial;
+  }
+  .phone-block__invis li a {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .phone-block__invis ul {
+    padding: 10px;
   }
 }
 @media (max-width: 359px) {
@@ -6039,7 +6094,7 @@ a.payment-methods__name:hover {
     line-height: 20px;
   }
   .index-page .header .menu-invis {
-    top: 61px;
+    top: 51px;
   }
   .menu-invis {
     top: 0;

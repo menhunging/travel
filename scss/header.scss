@@ -1,7 +1,11 @@
 .header {
   background-color: #f7f9f9;
   padding: 20px 80px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
 
   &.opened {
     .header__inner {
@@ -12,6 +16,28 @@
   .btn {
     padding-left: 32px;
     padding-right: 32px;
+  }
+}
+
+.index-page {
+  .header {
+    &.scroll {
+      background-color: #e4e4e5;
+
+      .header-info {
+        .phone-block {
+          color: $colorBlack;
+        }
+      }
+
+      .phone-block__arrow {
+        svg {
+          path {
+            fill: initial;
+          }
+        }
+      }
+    }
   }
 }
 

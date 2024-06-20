@@ -205,13 +205,36 @@
   .index-page {
     .header {
       .menu-invis {
-        top: 64px;
+        top: 59px;
       }
     }
   }
 
   .menu-invis {
     top: 0;
+  }
+
+  .phone-block {
+    font-size: 12px;
+    line-height: 16px;
+    padding-right: 20px;
+  }
+
+  .index-page .header .header-info .phone-block {
+    color: rgb(0, 0, 42);
+  }
+
+  .index-page .phone-block__arrow svg path {
+    fill: initial;
+  }
+
+  .phone-block__invis li a {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .phone-block__invis ul {
+    padding: 10px;
   }
 }
 
@@ -272,7 +295,7 @@
   .index-page {
     .header {
       .menu-invis {
-        top: 61px;
+        top: 51px;
       }
     }
   }

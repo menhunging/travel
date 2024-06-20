@@ -1,6 +1,16 @@
+let currentScroll = 0;
+
 addEventListener("scroll", (event) => {
   currentScroll = $(window).scrollTop();
   // console.log("currentScroll", currentScroll);
+
+  if ($(".grettings").length > 0) {
+    if (currentScroll >= $(".slider-section").offset().top - 100) {
+      $(".header").addClass("scroll");
+    } else {
+      $(".header").removeClass("scroll");
+    }
+  }
 });
 
 $(document).ready(function () {

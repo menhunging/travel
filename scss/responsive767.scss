@@ -761,12 +761,19 @@
     display: flex;
   }
 
-  .header .phone-block {
+  .header-info .btn {
     display: none;
   }
 
   .menu-invis {
     top: 0;
+
+    .mobile-call {
+      display: flex;
+      width: 100%;
+      margin-top: 20px;
+      padding: 0 20px;
+    }
 
     .phone-block {
       padding: 0 20px;
@@ -788,7 +795,7 @@
       }
 
       .menu-invis {
-        top: 59px;
+        top: 55px;
         min-height: initial;
       }
 
@@ -796,7 +803,7 @@
         top: 32px;
 
         &.opened {
-          top: 30px;
+          top: 34px;
         }
       }
     }
@@ -808,5 +815,9 @@
     &.opened {
       top: 14px;
     }
+  }
+
+  main {
+    padding-top: 75px;
   }
 }
