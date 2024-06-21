@@ -17,10 +17,6 @@
     padding: 80px 100px 100px;
   }
 
-  .footer__links {
-    transform: translate(calc(-50% - 24px), calc(-50% + 80px));
-  }
-
   .header .btn {
     padding-left: 22px;
     padding-right: 22px;
@@ -314,5 +310,21 @@
 
   .modal-success .btn {
     margin-top: 15px;
+  }
+
+  .footer__top {
+    flex-wrap: wrap;
+    padding: 30px 30px;
+  }
+
+  .footer-col {
+    width: calc(100% / 3 - 125px);
+
+    &:last-child {
+    }
+  }
+
+  .footer .btn {
+    margin-top: 20px;
   }
 }

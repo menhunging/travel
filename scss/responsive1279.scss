@@ -473,4 +473,13 @@
   main {
     padding-top: 80px;
   }
+
+  .footer__links .link {
+    font-size: 11px;
+    line-height: 14px;
+  }
+
+  .footer-col {
+    width: calc(100% / 3 - 105px);
+  }
 }
