@@ -25,3 +25,24 @@
     display: block !important;
   }
 }
+
+@media (max-width: 1599px) and (min-width: 1200px) {
+  html {
+    zoom: 85%;
+    margin-right: calc(-1 * (100vw - 85%)) !important;
+    overflow-x: hidden;
+  }
+
+  @-moz-document url-prefix() {
+    html {
+      transform: scale(0.85);
+      transform-origin: left top;
+      width: calc(100% / 0.85);
+      height: calc(100% / 0.85);
+      overflow-x: hidden;
+    }
+    .modalOpen {
+      transform: initial;
+    }
+  }
+}

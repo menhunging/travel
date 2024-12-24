@@ -393,6 +393,29 @@ section {
     margin-top: 20px;
   }
 
+  ul{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    
+    li{
+      padding-left: 35px;
+      position: relative;
+      width: 100%;
+
+      @include before{
+        width: 6px;
+        height: 6px;
+        top: 14px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 50%;
+        left: 14px;
+      }
+    }
+  }
+
   @include before {
     width: calc(100% + 235px);
     height: 100%;
@@ -1247,7 +1270,8 @@ a.payment-methods__name {
   left: 0;
   top: 0;
   width: 300px;
-  min-height: 1660px;
+  min-height: 850px;
+  // min-height: 1660px;
   background-image: url("../img/bg-hotels.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -1357,9 +1381,9 @@ a.payment-methods__name {
 
   a {
     position: relative;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 800;
-    line-height: 22px;
+    line-height: 16px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     transition: all 0.3s;
@@ -1415,6 +1439,12 @@ a.payment-methods__name {
   width: 1210px;
   overflow: visible;
 
+  &.small{
+    .swiper-controls{
+      display: none;
+    }
+  }
+
   .country-menu__col {
     width: 100%;
 
@@ -1458,7 +1488,8 @@ a.payment-methods__name {
 
 .country-menu__row {
   position: relative;
-  height: 554px;
+  // height: 554px;
+  height: auto;
   width: 100%;
 }
 
@@ -2240,7 +2271,7 @@ a.payment-methods__name {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: Raleway;
+  // font-family: Raleway;
   font-size: 15px;
   font-weight: 800;
   line-height: 22px;

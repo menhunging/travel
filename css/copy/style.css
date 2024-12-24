@@ -2017,32 +2017,6 @@ section {
 .text-page__text strong + * {
   margin-top: 20px;
 }
-.text-page__text ul {
-  margin: 10px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 100%;
-}
-.text-page__text ul li {
-  padding-left: 35px;
-  position: relative;
-  width: 100%;
-}
-.text-page__text ul li::before {
-  content: "";
-  position: absolute;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  width: 6px;
-  height: 6px;
-  top: 14px;
-  background-color: rgb(0, 0, 0);
-  border-radius: 50%;
-  left: 14px;
-}
 .text-page__text::before {
   content: "";
   position: absolute;
@@ -2886,7 +2860,7 @@ a.payment-methods__name:hover {
   left: 0;
   top: 0;
   width: 300px;
-  min-height: 850px;
+  min-height: 1660px;
   background-image: url("../img/bg-hotels.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -2959,9 +2933,9 @@ a.payment-methods__name:hover {
 }
 .country-menu__col a {
   position: relative;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 800;
-  line-height: 16px;
+  line-height: 22px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   transition: all 0.3s;
@@ -3016,9 +2990,6 @@ a.payment-methods__name:hover {
   width: 1210px;
   overflow: visible;
 }
-.slider-links.small .swiper-controls {
-  display: none;
-}
 .slider-links .country-menu__col {
   width: 100%;
 }
@@ -3050,7 +3021,7 @@ a.payment-methods__name:hover {
 
 .country-menu__row {
   position: relative;
-  height: auto;
+  height: 554px;
   width: 100%;
 }
 
@@ -3816,6 +3787,7 @@ a.payment-methods__name:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: Raleway;
   font-size: 15px;
   font-weight: 800;
   line-height: 22px;
@@ -4075,25 +4047,6 @@ main {
     display: block !important;
   }
 }
-@media (max-width: 1599px) and (min-width: 1200px) {
-  html {
-    zoom: 85%;
-    margin-right: calc(-1 * (100vw - 85%)) !important;
-    overflow-x: hidden;
-  }
-  @-moz-document url-prefix() {
-    html {
-      transform: scale(0.85);
-      transform-origin: left top;
-      width: 117.6470588235%;
-      height: 117.6470588235%;
-      overflow-x: hidden;
-    }
-    .modalOpen {
-      transform: initial;
-    }
-  }
-}
 @media (max-width: 1899px) {
   .header.opened .header__inner {
     padding-left: 0;
@@ -4224,6 +4177,9 @@ main {
   .hotels-block {
     margin-top: 50px;
     padding-top: 50px;
+  }
+  .country-menu__col a {
+    font-size: 13px;
   }
   .hotels-block .pagination {
     margin-top: 50px;
@@ -4585,8 +4541,8 @@ main {
     padding: 50px 30px;
   }
   .country-menu__col a {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 18px;
   }
   .slider-links {
     width: 924px;
@@ -5053,8 +5009,8 @@ main {
     padding-left: 240px;
   }
   .country-menu__col a {
-    font-size: 8px;
-    line-height: 12px;
+    font-size: 11px;
+    line-height: 16px;
   }
   .swiper-controls::before {
     max-width: 570px;
@@ -5407,8 +5363,8 @@ main {
     max-width: 100%;
   }
   .country-menu__col a {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 13px;
+    line-height: 20px;
   }
   .country-menu__title {
     font-size: 20px;
@@ -6240,3 +6196,28 @@ main {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.visually-hidden {
+  display: none;
+}
+
+.bq-loading-screen {
+  z-index: 99999;
+  filter: none;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#loading_screen{
+  position: fixed;
+  z-index: 10000;
+  left: 50%;
+  top: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+  width: 40px;
+  height: 40px;
+}
