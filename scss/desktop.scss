@@ -355,6 +355,11 @@ section {
 }
 
 .text-page__line {
+  .text-block{
+    background: transparent!important;
+    padding: 0;
+    margin-top: 50px;
+  }
 }
 
 .text-page__row {

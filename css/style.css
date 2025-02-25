@@ -1987,6 +1987,12 @@ section {
   background-repeat: no-repeat;
 }
 
+.text-page__line .text-block {
+  background: transparent !important;
+  padding: 0;
+  margin-top: 50px;
+}
+
 .text-page__row {
   display: grid;
   grid-template-columns: 1fr 440px;
