@@ -250,8 +250,12 @@
 
 @media (max-width: 359px) {
   .logo {
-    width: 115px;
-    height: 25px;
+    width: 220px;
+    height: 44px;
+  }
+
+  .index-page .header .btn-menu {
+    top: 40px;
   }
 
   .menu-invis {

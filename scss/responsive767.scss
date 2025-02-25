@@ -1,6 +1,6 @@
 @media (max-width: 767px) {
   .header {
-    padding: 20px 18px;
+    padding: 3px 18px;
   }
 
   .index-page {
@@ -11,6 +11,7 @@
 
   .index-page .header .logo::before {
     top: -35px;
+    height: 109px;
   }
 
   .header__inner {
@@ -802,7 +803,7 @@
       }
 
       .btn-menu {
-        top: 32px;
+        top: 53px;
 
         &.opened {
           top: 34px;

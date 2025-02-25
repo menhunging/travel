@@ -1,11 +1,11 @@
 @media (max-width: 1279px) {
   .logo {
-    width: 150px;
-    height: 33px;
+    width: 220px;
+    height: 64px;
   }
 
   .header {
-    padding: 15px 50px;
+    padding: 3px 50px;
 
     .header-adress {
       display: none;
@@ -66,7 +66,7 @@
 
   .index-page .header .logo::before {
     width: 350px;
-    height: 80px;
+    height: 100px;
     left: -80px;
     top: -25px;
   }
@@ -435,7 +435,10 @@
       .menu-invis {
         top: 77px;
       }
-
+      .btn-menu{
+        top:45px;
+      }
+      
       .btn-menu.opened {
         left: 300px;
         top: 27px;
