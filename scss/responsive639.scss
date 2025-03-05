@@ -37,8 +37,8 @@
   }
 
   .slider-default__item .date .day {
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .slider-default__item .date .mon {
@@ -133,6 +133,39 @@
   }
 
   .footer-col {
+    width: 100%;
+  }
+
+  .followind-block .followind-block__inner::after {
+    display: none;
+  }
+
+  .followind-block .followind-block__inner {
+    min-height: initial;
+    padding: 20px 20px;
+  }
+
+  .followind-block .followind-block__bottom {
+    font-size: 14px;
+    line-height: 20px;
+
+    span {
+      max-width: 100%;
+    }
+  }
+
+  .followind-block .mail,
+  .followind-block .phone {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .followind-block .link {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .followind-block .followind-block__tit{
     width: 100%;
   }
 }

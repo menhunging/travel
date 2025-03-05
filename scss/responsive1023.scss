@@ -371,8 +371,13 @@
   }
 
   .exlusive-programs__link {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .exlusive-programs__item {
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .details-section .pagination {
@@ -494,5 +499,60 @@
 
   main {
     padding-top: 70px;
+  }
+
+  .quote-boss {
+    font-size: 18px;
+    line-height: 30px;
+
+    p {
+      margin-top: 150px;
+    }
+  }
+
+  .teams-new .teams-new__right {
+    max-width: 300px;
+  }
+
+  .our-awards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .teams-new .teams-new__left {
+    max-width: 400px;
+  }
+
+  .teams-new .teams-new__left .btn {
+    margin-top: 35px;
+  }
+
+  .followind-block .followind-block__list {
+    padding: 10px 20px;
+    margin: 20px 0;
+  }
+
+  .followind-block .followind-block__inner {
+    min-height: 430px;
+    padding: 50px 30px;
+  }
+
+  .followind-block .followind-block__item {
+    padding: 15px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .followind-block .followind-block__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .followind-block .followind-block__inner::after {
+    width: 400px;
+    height: 485px;
+    bottom: 0px;
+    right: -30px;
   }
 }

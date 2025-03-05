@@ -330,11 +330,12 @@
   .exlusive-programs {
     margin-top: 30px;
     gap: 30px 15px;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .exlusive-programs__link {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 20px;
     margin-top: 15px;
   }
 
@@ -435,10 +436,10 @@
       .menu-invis {
         top: 77px;
       }
-      .btn-menu{
-        top:45px;
+      .btn-menu {
+        top: 45px;
       }
-      
+
       .btn-menu.opened {
         left: 300px;
         top: 27px;
@@ -484,5 +485,47 @@
 
   .footer-col {
     width: calc(100% / 3 - 105px);
+  }
+
+  .teams-new .teams-new__left {
+    max-width: 500px;
+  }
+
+  .teams-new .teams-new__list .teams-new__name {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .teams-new .teams-new__list p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .teams-new .teams-new__item {
+    padding: 20px;
+  }
+
+  .teams-new .caption {
+    margin-bottom: 30px;
+  }
+
+  .our-awards {
+    max-height: 960px;
+  }
+
+  .followind-block .followind-block__inner {
+    min-height: 530px;
+    padding: 55px 40px;
+  }
+
+  .followind-block .followind-block__inner::after {
+    width: 500px;
+    height: 555px;
+    bottom: 0px;
+    right: -210px;
+    z-index: 3;
+    pointer-events: none;
+    background-position: left center;
+    background-size: cover;
   }
 }

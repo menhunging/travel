@@ -823,4 +823,73 @@
   main {
     padding-top: 75px;
   }
+
+  .quote-boss {
+    font-size: 14px;
+    line-height: 20px;
+
+    p {
+      margin-top: 10px;
+    }
+  }
+
+  .quote-boss .boss .boss__content {
+    padding-left: 120px;
+  }
+
+  .quote-boss .boss .picture.pic-boss {
+    width: 120px;
+    height: 170px;
+  }
+
+  .quote-boss .boss {
+    min-height: 230px;
+  }
+
+  .quote-boss .boss .picture.pic-bg {
+    width: 109px;
+    height: 169px;
+  }
+
+  .quote-boss .boss-media::after {
+    top: calc(100% + 125px);
+    width: 109px;
+  }
+
+  .quote-boss .boss-media::before {
+    width: 109px;
+    height: 130px;
+    top: calc(100% + 129px);
+    left: 0;
+    z-index: 3;
+  }
+
+  .teams-new .teams-new__head {
+    flex-direction: column;
+  }
+
+  .teams-new .teams-new__left {
+    max-width: 100%;
+  }
+
+  .teams-new .teams-new__right {
+    max-width: 100%;
+    margin-top: 60px;
+  }
+
+  .our-awards {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-right: 0;
+    max-height: initial;
+    overflow: hidden;
+  }
+
+  .our-awards .picture-block {
+    height: auto;
+    padding-top: calc(175 / 133 * 100%);
+  }
+
+  .followind-block .followind-block__inner::after {
+    right: -140px;
+  }
 }
