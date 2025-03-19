@@ -892,4 +892,24 @@
   .followind-block .followind-block__inner::after {
     right: -140px;
   }
+
+  .text-page {
+    h1,
+    .caption--h1 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  
+    h2,
+    .caption--h2 {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  
+    h3,
+    .caption--h3 {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
 }

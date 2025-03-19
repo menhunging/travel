@@ -1987,6 +1987,21 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.text-page h1,
+.text-page .caption--h1 {
+  font-size: 44px;
+  line-height: 54px;
+}
+.text-page h2,
+.text-page .caption--h2 {
+  font-size: 32px;
+  line-height: 40px;
+}
+.text-page h3,
+.text-page .caption--h3 {
+  font-size: 32px;
+  line-height: 40px;
+}
 
 .text-page__line .text-block {
   background: transparent !important;
@@ -5221,6 +5236,21 @@ main {
     background-position: left center;
     background-size: cover;
   }
+  .text-page h1,
+  .text-page .caption--h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .text-page h2,
+  .text-page .caption--h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .text-page h3,
+  .text-page .caption--h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 @media (max-width: 1023px) {
   .header {
@@ -5619,6 +5649,7 @@ main {
   .quote-boss {
     font-size: 18px;
     line-height: 30px;
+    order: 3;
   }
   .quote-boss p {
     margin-top: 150px;
@@ -6391,6 +6422,21 @@ main {
   }
   .followind-block .followind-block__inner::after {
     right: -140px;
+  }
+  .text-page h1,
+  .text-page .caption--h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .text-page h2,
+  .text-page .caption--h2 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .text-page h3,
+  .text-page .caption--h3 {
+    font-size: 20px;
+    line-height: 25px;
   }
 }
 @media (max-width: 639px) {

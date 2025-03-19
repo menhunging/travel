@@ -528,4 +528,24 @@
     background-position: left center;
     background-size: cover;
   }
+
+  .text-page {
+    h1,
+    .caption--h1 {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  
+    h2,
+    .caption--h2 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  
+    h3,
+    .caption--h3 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
 }
