@@ -42,7 +42,7 @@ input {
 
 .logo {
   position: relative;
-  width: 290px;
+  width: 410px;
   height: 90px;
   @include invisLink;
   transition: opacity 0.3s;
@@ -57,7 +57,7 @@ input {
 
   img {
     position: absolute;
-    left: 0;
+    left: -70px;
     top: 0;
     width: 100%;
     height: 100%;

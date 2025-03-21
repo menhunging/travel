@@ -305,12 +305,24 @@
   .followind-block .followind-block__inner {
     padding: 15px 15px;
   }
+
+  .logo{
+    img{
+      left: 0;
+      object-fit: contain;
+    }
+  }
+  
 }
 
 @media (max-width: 359px) {
   .logo {
     width: 220px;
     height: 44px;
+
+    img{
+      object-fit: contain;
+    }
   }
 
   .index-page .header .btn-menu {
