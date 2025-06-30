@@ -1,0 +1,4 @@
+<?php
+
+$MESS ["FOS_TEMPLATE_DEFAULT_NAME"] = "DEFAULT";
+?>

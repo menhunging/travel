@@ -18,6 +18,7 @@
     padding-left: 32px;
     padding-right: 32px;
     margin-top: 40px;
+    height: 60px;
   }
 }
 
@@ -121,12 +122,15 @@
   font-size: 16px;
   line-height: 24px;
 
-  strong {
+  .link-to-site {
     display: block;
     font-size: 18px;
+    font-weight: 700;
+
+    @include text-decoration-hover($colorBlack);
   }
 
-  a {
+  a:not(.link-to-site) {
     color: $colorBlack;
     @include text-decoration-hover($colorBlack);
   }
@@ -140,7 +144,6 @@
   font-weight: 800;
   line-height: 30px;
   letter-spacing: 0.1em;
-  margin-top: 51px;
 
   a {
     color: $colorBlueDark;

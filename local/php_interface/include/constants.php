@@ -1,0 +1,7 @@
+<?php
+
+//define("GOOGLE_RECAPTCHA_V3_SITE_KEY", '6LeyqhkqAAAAAHdrsfE2wy1V6BjeJ2Mhfiwsq8XN');
+define("GOOGLE_RECAPTCHA_V3_SITE_KEY", '6LdHtHEqAAAAAGIyb1Lnzmsx1lOs16onb45xOpsQ');
+//define("GOOGLE_RECAPTCHA_V3_SECRET_KEY", '6LeyqhkqAAAAABbZl_EBcTwJGcGqccxZX3yL9ylO');
+define("GOOGLE_RECAPTCHA_V3_SECRET_KEY", '6LdHtHEqAAAAANIZ47I3QiN4e-KwGv5Y2RhH0sYd');
+define("GOOGLE_RECAPTCHA_URL", "https://www.google.com/recaptcha/api.js?render=" . GOOGLE_RECAPTCHA_V3_SITE_KEY);

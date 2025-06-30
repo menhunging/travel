@@ -36,7 +36,7 @@
   }
 
   .menu-invis {
-    padding: 100px 0;
+    padding: 125px 0 100px;
 
     a {
       padding: 20px 40px;
@@ -148,7 +148,7 @@
 
   .payment-methods__item {
     width: calc(50% - 10px);
-    padding-left: 170px;
+    padding-left: 140px;
   }
 
   .hotels-list {
@@ -475,7 +475,18 @@
 
   .index-page .menu-invis {
     max-height: 670px;
-    padding: 50px 0;
+    padding: 110px 0 50px;
+  }
+
+  .index-page .menu-invis .currents table tbody {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .index-page .menu-invis .currents table tbody tr {
+    padding-left: 10px;
+    padding-right: 20px;
   }
 
   main {
@@ -509,12 +520,16 @@
     padding: 20px;
   }
 
+  .teams-new .teams-new__content{
+    gap:10px;
+  }
+
   .teams-new .caption {
     margin-bottom: 30px;
   }
 
   .our-awards {
-    max-height: 960px;
+    max-height: 1103px;
   }
 
   .followind-block .followind-block__inner {
@@ -550,6 +565,22 @@
     .caption--h3 {
       font-size: 24px;
       line-height: 30px;
+    }
+  }
+
+  .currents {
+    display: none;
+  }
+
+  .menu-invis .currents {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .footer {
+    .currents {
+      display: block;
+      margin-top: 10px;
     }
   }
 }

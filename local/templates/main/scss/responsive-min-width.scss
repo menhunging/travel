@@ -1,0 +1,52 @@
+@media (min-width: 1280px) {
+  .menu {
+    display: block !important;
+  }
+
+  .footer-menu__col {
+    &:nth-child(2) {
+      ul {
+        display: grid !important;
+      }
+    }
+
+    ul {
+      display: block !important;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .country-menu__inner {
+    display: block !important;
+  }
+
+  .country-links ul {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1599px) and (min-width: 1200px) {
+  html {
+    zoom: 85%;
+    margin-right: calc(-1 * (100vw - 85%)) !important;
+    overflow-x: hidden;
+  }
+
+  @-moz-document url-prefix() {
+    html {
+      transform: scale(0.85);
+      transform-origin: left top;
+      width: calc(100% / 0.85);
+      height: calc(100% / 0.85);
+      overflow-x: hidden;
+    }
+    .modalOpen {
+      transform: initial;
+    }
+  }
+
+  .hotels-list{
+    height: 820px;
+  }
+}

@@ -1,0 +1,551 @@
+@media (max-width: 1279px) {
+  .logo {
+    width: 220px;
+    height: 64px;
+  }
+
+  .header {
+    padding: 3px 50px;
+
+    .header-adress {
+      display: none;
+    }
+  }
+
+  .phone-block {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .header-info {
+    gap: 20px;
+  }
+
+  .btn {
+    padding: 13px 30px;
+    gap: 10px;
+  }
+
+  .link-mail {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .menu-invis {
+    padding: 100px 0;
+
+    a {
+      padding: 20px 40px;
+    }
+
+    .header-adress {
+      display: flex;
+      padding: 0 40px;
+      max-width: 100%;
+      width: 100%;
+      margin-top: 25px;
+    }
+  }
+
+  .footer__links {
+    line-height: 24px;
+
+    .link {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  .footer__top {
+    padding: 20px 60px 50px;
+  }
+
+  .footer__center {
+    padding: 50px 100px;
+  }
+
+  .index-page .header .logo::before {
+    width: 350px;
+    height: 100px;
+    left: -80px;
+    top: -25px;
+  }
+
+  .footer .btn,
+  .header .btn {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  body {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .text-page__text {
+    padding: 45px 60px 45px 0;
+  }
+
+  .text-page__row .btn {
+    margin-top: 30px;
+  }
+
+  .image-block {
+    min-height: 600px;
+    padding: 40px 0;
+  }
+
+  .our-values li {
+    padding-left: 90px;
+  }
+
+  .our-values .picture {
+    width: 59px;
+    height: 59px;
+  }
+
+  .our-values ul {
+    margin-top: 50px;
+  }
+
+  .teams__head {
+    grid-template-columns: 50% 45%;
+    gap: 20px 0;
+  }
+
+  .types-services__list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0;
+    margin: 0;
+  }
+
+  .types-services__content {
+    margin-top: 20px;
+  }
+
+  .types-services__slider {
+    margin-top: 30px;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: flex;
+    }
+  }
+
+  .payment-methods__top {
+    padding: 50px 40px;
+  }
+
+  .payment-methods__bottom {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .payment-methods__item {
+    width: calc(50% - 10px);
+    padding-left: 170px;
+  }
+
+  .hotels-list {
+    height: auto;
+    flex-direction: row;
+    gap: 40px 20px;
+  }
+
+  .hotels-item {
+    width: calc(50% - 20px);
+  }
+
+  .hotels {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .hotels__list {
+    max-width: 100%;
+    gap: 20px;
+  }
+
+  .country-page__content {
+    padding-left: 280px;
+    gap: 20px;
+  }
+
+  .country-page__content .picture {
+    width: calc(100% + 40px);
+    height: 400px;
+    left: -20px;
+  }
+
+  .country-menu {
+    width: 260px;
+    padding: 50px 30px;
+  }
+
+  .country-menu__col a {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .slider-links {
+    width: 924px;
+  }
+
+  .transfers-item__body {
+    padding-left: 45px;
+  }
+
+  .table .th:first-child {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .table .td:first-child {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .table .td {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .table-wrapper {
+    padding-right: 30px;
+  }
+
+  .transfers-item__head::after {
+    right: 30px;
+  }
+
+  .visa-block {
+    padding: 30px;
+    margin: 20px 0;
+  }
+
+  .transfers-list {
+    margin-top: 20px;
+  }
+
+  .country-gallery {
+    padding: 50px 0;
+    margin-bottom: 50px;
+  }
+
+  .swiper-controls::before {
+    max-width: 570px;
+  }
+
+  .country-menu__row {
+    height: 432px;
+  }
+
+  .slider-links {
+    height: 432px;
+  }
+
+  .country-menu__line + .country-menu__line {
+    margin-top: 30px;
+  }
+
+  .country-menu__col a::before {
+    left: calc(100% + 8px);
+  }
+
+  .country-page {
+    min-height: 1322px;
+  }
+
+  .hotels-block__item .picture {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .hotels-block {
+    padding-top: 50px;
+    margin-top: 50px;
+  }
+
+  .hotels-block .pagination {
+    margin-top: 60px;
+    left: -15px;
+    position: relative;
+    width: calc(100% + 30px);
+  }
+
+  .country-page .pagination {
+    margin-top: 20px;
+    left: -15px;
+    position: relative;
+    width: calc(100% + 30px);
+  }
+
+  .country-page .exlusive-programs {
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hotels-block__list {
+    gap: 30px 15px;
+  }
+
+  .slider-images-big .picture {
+    width: 100%;
+    height: auto;
+    padding-top: calc(338 / 360 * 100%);
+  }
+
+  .details-section__slider {
+    left: -20px;
+    width: calc(100% + 40px);
+    position: relative;
+    margin-top: 20px;
+
+    .swiper-button-prev {
+      left: 20px;
+    }
+    .swiper-button-next {
+      right: 20px;
+    }
+  }
+
+  .slider-images-small {
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+
+  .menu-tabs-links {
+    margin-top: 30px;
+    left: -20px;
+    width: calc(100% + 40px);
+  }
+
+  .menu-tabs-links__list {
+    padding: 0 20px;
+  }
+
+  .exlusive-programs {
+    margin-top: 30px;
+    gap: 30px 15px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .exlusive-programs__link {
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 15px;
+  }
+
+  .exlusive-programs__item p {
+    margin-top: 10px;
+  }
+
+  .details-section .pagination {
+    margin-top: 60px;
+    left: -15px;
+    position: relative;
+    width: calc(100% + 30px);
+  }
+
+  .menu-tabs-links .arrow-block {
+    display: none;
+  }
+
+  .details-section .tabs .tabs-links {
+    position: relative;
+    left: -20px;
+    width: calc(100% + 40px);
+  }
+
+  .slider-default__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 24px;
+    margin-top: 30px;
+  }
+
+  .news {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 24px;
+    margin-top: 40px;
+  }
+
+  .details-section .caption + .text-page__text {
+    margin-top: 40px;
+  }
+
+  .portfolio-events {
+    padding: 40px 0;
+  }
+
+  .contacts {
+    margin-top: 40px;
+    grid-template-columns: 1fr 460px;
+    gap: 50px 40px;
+  }
+
+  .map {
+    height: 560px;
+  }
+
+  .not-page {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    padding: 50px 0;
+  }
+
+  .not-page__left {
+    padding: 120px 60px;
+  }
+
+  .not-page__content::before {
+    top: 37px;
+    margin-left: -380px;
+  }
+
+  .copy {
+    margin-top: 50px;
+    margin-left: 8%;
+  }
+
+  .country-links {
+    width: 260px;
+  }
+
+  .country-page {
+    padding: 30px 0 60px;
+  }
+
+  .details-section {
+    padding: 30px 0;
+  }
+
+  .index-page .menu-invis {
+    max-height: 801px;
+  }
+
+  .not-page {
+    transform: translateX(0);
+  }
+
+  .index-page {
+    .header {
+      .menu-invis {
+        top: 77px;
+      }
+      .btn-menu {
+        top: 45px;
+      }
+
+      .btn-menu.opened {
+        left: 300px;
+        top: 27px;
+      }
+    }
+  }
+
+  .menu-invis {
+    width: 320px;
+    top: 0;
+  }
+
+  .btn-menu {
+    top: 27px;
+  }
+
+  .btn-menu.opened {
+    left: 320px;
+  }
+
+  .menu-invis ul li a {
+    padding: 20px 20px;
+    font-size: 14px;
+  }
+
+  .grettings {
+    max-height: 540px;
+  }
+
+  .index-page .menu-invis {
+    max-height: 670px;
+    padding: 50px 0;
+  }
+
+  main {
+    padding-top: 80px;
+  }
+
+  .footer__links .link {
+    font-size: 11px;
+    line-height: 14px;
+  }
+
+  .footer-col {
+    width: calc(100% / 3 - 105px);
+  }
+
+  .teams-new .teams-new__left {
+    max-width: 500px;
+  }
+
+  .teams-new .teams-new__list .teams-new__name {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .teams-new .teams-new__list p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .teams-new .teams-new__item {
+    padding: 20px;
+  }
+
+  .teams-new .caption {
+    margin-bottom: 30px;
+  }
+
+  .our-awards {
+    max-height: 960px;
+  }
+
+  .followind-block .followind-block__inner {
+    min-height: 530px;
+    padding: 55px 40px;
+  }
+
+  .followind-block .followind-block__inner::after {
+    width: 500px;
+    height: 555px;
+    bottom: 0px;
+    right: -210px;
+    z-index: 3;
+    pointer-events: none;
+    background-position: left center;
+    background-size: cover;
+  }
+
+  .text-page {
+    h1,
+    .caption--h1 {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  
+    h2,
+    .caption--h2 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  
+    h3,
+    .caption--h3 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+}

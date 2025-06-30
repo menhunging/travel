@@ -7,8 +7,12 @@
     }
   }
 
+  .currents__title {
+    font-size: 12px;
+  }
+
   .menu-invis {
-    padding: 20px 0;
+    padding: 110px 0 20px;
     font-size: 14px;
     line-height: 16px;
     width: 300px;
@@ -555,5 +559,10 @@
     height: 485px;
     bottom: 0px;
     right: -30px;
+  }
+
+  .payment-methods__item .picture {
+    width: 100px;
+    height: 100px;
   }
 }

@@ -1,0 +1,171 @@
+@media (max-width: 639px) {
+  .header {
+    .btn {
+      svg {
+        display: none;
+      }
+    }
+  }
+
+  .btn {
+    font-size: 10px;
+    line-height: 20px;
+    padding: 10px 32px;
+  }
+
+  .footer .btn,
+  .header .btn {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .btn-menu {
+    top: 52px;
+  }
+
+  .slider-section__head {
+    gap: 10px 20px;
+  }
+
+  .slider-default__content {
+    margin-top: 10px;
+  }
+
+  .slider-default__item .date {
+    width: 70px;
+    height: 70px;
+  }
+
+  .slider-default__item .date .day {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .slider-default__item .date .mon {
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+  }
+
+  .slider-default__link {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .slider-default__price {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .slider-default .picture {
+  }
+
+  .btn-arrow-circle {
+    width: 50px;
+    height: 50px;
+    background-size: 15px;
+  }
+
+  .payment-methods__top {
+    padding: 30px 15px;
+  }
+
+  .payment-methods__item .picture {
+    width: 120px;
+    height: 70px;
+  }
+
+  .payment-methods__item {
+    padding-left: 140px;
+    min-height: 70px;
+  }
+
+  .payment-methods__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .payment-methods__bottom {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    font-size: 14px;
+    line-height: 20px;
+
+    strong {
+      margin-right: 0;
+    }
+  }
+
+  .hotels-block__list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pagination {
+    gap: 15px;
+  }
+
+  .exlusive-programs__link {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .exlusive-programs {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .slider-default__list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px 16px;
+    margin-top: 30px;
+  }
+
+  .news {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px 16px;
+    margin-top: 30px;
+  }
+
+  .country-page .exlusive-programs {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
+
+  .footer-col {
+    width: 100%;
+  }
+
+  .followind-block .followind-block__inner::after {
+    display: none;
+  }
+
+  .followind-block .followind-block__inner {
+    min-height: initial;
+    padding: 20px 20px;
+  }
+
+  .followind-block .followind-block__bottom {
+    font-size: 14px;
+    line-height: 20px;
+
+    span {
+      max-width: 100%;
+    }
+  }
+
+  .followind-block .mail,
+  .followind-block .phone {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .followind-block .link {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .followind-block .followind-block__tit{
+    width: 100%;
+  }
+}

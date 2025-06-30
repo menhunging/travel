@@ -1,0 +1,17 @@
+{
+    "name": "bqcollection/bquadro.fos",
+    "description": "Модуль форм обратной связи",
+    "type": "bitrix-d7-module",
+    "authors": [
+        {
+            "name": "bquadro",
+            "email": "tech@bquadro.ru"
+        }
+    ],
+    "require": {
+        "composer/installers": "~1"
+    },
+    "extra": {
+        "installer-name": "bquadro.fos"
+    }
+}

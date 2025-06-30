@@ -70,14 +70,9 @@
     padding: 30px 15px;
   }
 
-  .payment-methods__item .picture {
-    width: 120px;
-    height: 70px;
-  }
-
   .payment-methods__item {
     padding-left: 140px;
-    min-height: 70px;
+    min-height: 100px;
   }
 
   .payment-methods__text {
@@ -165,7 +160,7 @@
     line-height: 20px;
   }
 
-  .followind-block .followind-block__tit{
+  .followind-block .followind-block__tit {
     width: 100%;
   }
 }

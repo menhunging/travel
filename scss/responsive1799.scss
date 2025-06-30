@@ -10,13 +10,14 @@
 
 @media (max-width: 1799px) {
   .footer__top {
-    padding: 20px 60px;
+    padding: 20px 80px;
   }
 
   .footer__center {
     padding: 80px 100px 100px;
   }
 
+  .footer .btn,
   .header .btn {
     padding-left: 22px;
     padding-right: 22px;
@@ -25,7 +26,7 @@
 
 @media (max-width: 1599px) {
   .menu-invis {
-    padding: 50px 0;
+    padding: 110px 0 50px;
   }
 
   .menu-invis ul li a {
@@ -317,6 +318,10 @@
     width: calc(100% / 3 - 125px);
 
     &:last-child {
+    }
+
+    .btn {
+      max-width: 242px;
     }
   }
 

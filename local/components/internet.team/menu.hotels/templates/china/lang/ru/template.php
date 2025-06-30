@@ -1,0 +1,3 @@
+<?php
+$MESS["CP_MENU_HOTELS_CHINA_TITLE"] = "Меню";
+$MESS["CP_MENU_HOTELS_HOTEL_TITLE"] = "Отели";
